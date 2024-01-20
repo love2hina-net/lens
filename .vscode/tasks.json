@@ -6,9 +6,14 @@
         {
             "type": "shell",
             "group": "build",
-            "command": "yarn",
+            "command": "npx",
             "args": [
-                "debug-build"
+                "cross-env",
+                "NODE_ENV=development",
+                "lerna",
+                "run",
+                "build",
+                "--stream"
             ],
             "problemMatcher": [],
             "label": "compile-dev",

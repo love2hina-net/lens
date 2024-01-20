@@ -7,28 +7,20 @@
         {
             "name": "Main Process",
             "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "protocol": "inspector",
-            "preLaunchTask": "compile-dev",
-            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
-            "windows": {
-              "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
-            },
-            "runtimeArgs": [
-                "--remote-debugging-port=9223",
-                "--inspect",
-                "."
-            ],
-            "outputCapture": "std"
+            "request": "attach"
         },
         {
             "name": "Renderer Process",
-            "type": "pwa-chrome",
+            "type": "chrome",
             "request": "attach",
             "port": 9223,
             "webRoot": "${workspaceFolder}",
-            "timeout": 30000
+            "timeout": 30000,
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack://open-lens/*": "${webRoot}/open-lens/*",
+                "webpack://@k8slens/core/*": "${webRoot}/packages/core/*"
+            }
         },
         {
             "name": "Integration Tests",
@@ -54,4 +46,13 @@
             ]
         }
     ],
+    "compounds": [
+        {
+            "name": "OpenLens Debug",
+            "configurations": [
+                "Main Process",
+                "Renderer Process",
+            ],
+        }
+    ]
 }

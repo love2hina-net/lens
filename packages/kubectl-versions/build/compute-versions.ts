@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 const expectedResponseForm = TypedRegEx("v(?<version>\\d+\\.\\d+\\.\\d+)");
 
 async function requestGreatestKubectlPatchVersion(majorMinor: string): Promise<string | undefined> {
-  const response = await fetch(`https://dl.k8s.io/release/stable-${majorMinor}.txt`);
+  const response = await fetch(`https://cdn.dl.k8s.io/release/stable-${majorMinor}.txt`);
 
   if (response.status !== 200) {
     try {
