@@ -66,7 +66,7 @@
     "welcomeRoute": "/welcome"
   },
   "engines": {
-    "node": ">=16 <17"
+    "node": "20"
   },
   "jest": {
     "collectCoverage": false,
@@ -261,7 +261,7 @@
     "conf": "^10.2.0",
     "crypto-js": "^4.1.1",
     "dompurify": "^2.4.4",
-    "electron": "^22.3.10",
+    "electron": "^29.0.1",
     "electron-devtools-installer": "^3.2.0",
     "electron-updater": "^4.6.5",
     "electron-window-state": "^5.0.3",
@@ -285,7 +285,7 @@
     "moment-timezone": "^0.5.40",
     "monaco-editor": "^0.38.0",
     "node-pty": "0.10.1",
-    "npm": "^9.6.7",
+    "npm": "^10.4.0",
     "path-to-regexp": "^6.2.0",
     "proper-lockfile": "^4.1.2",
     "query-string": "^7.1.3",

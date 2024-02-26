@@ -43,7 +43,7 @@
     "welcomeRoute": "/welcome"
   },
   "engines": {
-    "node": ">=16 <17"
+    "node": "20"
   },
   "jest": {
     "collectCoverage": false,
@@ -260,7 +260,7 @@
     "moment-timezone": "^0.5.40",
     "monaco-editor": "^0.38.0",
     "node-pty": "0.10.1",
-    "npm": "^9.6.7",
+    "npm": "^10.4.0",
     "p-limit": "^3.1.0",
     "path-to-regexp": "^6.2.0",
     "proper-lockfile": "^4.1.2",
@@ -299,8 +299,8 @@
     "xterm-link-provider": "^1.3.1"
   },
   "devDependencies": {
-    "@electron/notarize": "^1.2.3",
-    "@electron/rebuild": "^3.2.10",
+    "@electron/notarize": "^2.3.0",
+    "@electron/rebuild": "^3.6.0",
     "@k8slens/generate-tray-icons": "^6.5.0",
     "@k8slens/test-utils": "^1.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
@@ -331,8 +331,8 @@
     "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.2",
-    "electron": "^22.3.10",
-    "electron-builder": "^23.6.0",
+    "electron": "^29.0.1",
+    "electron-builder": "^24.12.0",
     "esbuild-loader": "^2.20.0",
     "fork-ts-checker-webpack-plugin": "^7.3.0",
     "html-webpack-plugin": "^5.5.1",

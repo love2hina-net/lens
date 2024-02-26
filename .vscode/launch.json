@@ -7,7 +7,19 @@
         {
             "name": "Main Process",
             "type": "node",
-            "request": "attach"
+            "request": "launch",
+            "cwd": "${workspaceFolder}/open-lens",
+            "preLaunchTask": "compile-dev",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+            },
+            "runtimeArgs": [
+                "--remote-debugging-port=9223",
+                "--inspect-brk",
+                "."
+            ],
+            "outputCapture": "std"
         },
         {
             "name": "Renderer Process",
@@ -44,15 +56,6 @@
                 "-i",
                 "src"
             ]
-        }
-    ],
-    "compounds": [
-        {
-            "name": "OpenLens Debug",
-            "configurations": [
-                "Main Process",
-                "Renderer Process",
-            ],
         }
     ]
 }
