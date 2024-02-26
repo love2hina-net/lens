@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 import { Link } from "react-router-dom";
 import { KubeObjectListLayout } from "../kube-object-list-layout";
 import { stopPropagation } from "@k8slens/utilities";
-import type { PersistentVolumeClaimApi, StorageClassApi } from "../../../common/k8s-api/endpoints";
+import type { PersistentVolumeClaimApi, StorageClassApi } from "@k8slens/kube-api";
 import { KubeObjectStatusIcon } from "../kube-object-status-icon";
 import { SiblingsInTabLayout } from "../layout/siblings-in-tab-layout";
 import { KubeObjectAge } from "../kube-object/age";
@@ -18,9 +18,8 @@ import type { PersistentVolumeStore } from "./store";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
-import persistentVolumeClaimApiInjectable from "../../../common/k8s-api/endpoints/persistent-volume-claim.api.injectable";
+import { persistentVolumeClaimApiInjectable, storageClassApiInjectable } from "@k8slens/kube-api-specifics";
 import persistentVolumeStoreInjectable from "./store.injectable";
-import storageClassApiInjectable from "../../../common/k8s-api/endpoints/storage-class.api.injectable";
 
 enum columnId {
   name = "name",

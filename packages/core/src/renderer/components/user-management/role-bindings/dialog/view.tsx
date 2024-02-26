@@ -14,7 +14,7 @@ import type { ClusterRole, Role, ServiceAccount, Subject } from "@k8slens/kube-o
 import type { DialogProps } from "../../../dialog";
 import { Dialog } from "../../../dialog";
 import { EditableList } from "../../../editable-list";
-import { Icon } from "../../../icon";
+import { Icon } from "@k8slens/icon";
 import { SubTitle } from "../../../layout/sub-title";
 import type { SelectOption } from "../../../select";
 import { onMultiSelectFor, Select } from "../../../select";
@@ -35,10 +35,10 @@ import showDetailsInjectable from "../../../kube-detail-params/show-details.inje
 import clusterRoleStoreInjectable from "../../cluster-roles/store.injectable";
 import roleStoreInjectable from "../../roles/store.injectable";
 import serviceAccountStoreInjectable from "../../service-accounts/store.injectable";
-import roleApiInjectable from "../../../../../common/k8s-api/endpoints/role.api.injectable";
-import type { ShowCheckedErrorNotification } from "../../../notifications/show-checked-error.injectable";
-import showCheckedErrorNotificationInjectable from "../../../notifications/show-checked-error.injectable";
-import type { RoleApi } from "../../../../../common/k8s-api/endpoints";
+import { roleApiInjectable } from "@k8slens/kube-api-specifics";
+import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
+import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import type { RoleApi } from "@k8slens/kube-api";
 
 export interface RoleBindingDialogProps extends Partial<DialogProps> {
 }

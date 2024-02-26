@@ -4,6 +4,9 @@ exports[`installing update when started renders 1`] = `
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -86,7 +89,51 @@ exports[`installing update when started renders 1`] = `
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -296,9 +343,6 @@ exports[`installing update when started renders 1`] = `
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -307,6 +351,9 @@ exports[`installing update when started when user checks for updates renders 1`]
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -389,7 +436,51 @@ exports[`installing update when started when user checks for updates renders 1`]
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -599,9 +690,6 @@ exports[`installing update when started when user checks for updates renders 1`]
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -610,6 +698,9 @@ exports[`installing update when started when user checks for updates when new up
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -692,7 +783,51 @@ exports[`installing update when started when user checks for updates when new up
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -902,9 +1037,6 @@ exports[`installing update when started when user checks for updates when new up
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -913,6 +1045,9 @@ exports[`installing update when started when user checks for updates when new up
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -995,7 +1130,51 @@ exports[`installing update when started when user checks for updates when new up
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -1205,9 +1384,6 @@ exports[`installing update when started when user checks for updates when new up
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -1216,6 +1392,9 @@ exports[`installing update when started when user checks for updates when new up
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -1298,7 +1477,51 @@ exports[`installing update when started when user checks for updates when new up
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -1508,9 +1731,6 @@ exports[`installing update when started when user checks for updates when new up
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -1519,6 +1739,9 @@ exports[`installing update when started when user checks for updates when new up
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -1626,7 +1849,51 @@ exports[`installing update when started when user checks for updates when new up
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -1836,9 +2103,6 @@ exports[`installing update when started when user checks for updates when new up
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -1847,6 +2111,9 @@ exports[`installing update when started when user checks for updates when new up
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -1954,7 +2221,51 @@ exports[`installing update when started when user checks for updates when new up
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -2164,9 +2475,6 @@ exports[`installing update when started when user checks for updates when new up
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -2175,6 +2483,9 @@ exports[`installing update when started when user checks for updates when new up
 <body>
   <div>
     <div
+      class="Notifications flex column align-flex-end"
+    />
+    <div
       class="ClusterManager"
     >
       <div
@@ -2282,7 +2593,51 @@ exports[`installing update when started when user checks for updates when new up
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -2492,9 +2847,6 @@ exports[`installing update when started when user checks for updates when new up
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;
@@ -2502,6 +2854,9 @@ exports[`installing update when started when user checks for updates when new up
 exports[`installing update when started when user checks for updates when no new update is discovered renders 1`] = `
 <body>
   <div>
+    <div
+      class="Notifications flex column align-flex-end"
+    />
     <div
       class="ClusterManager"
     >
@@ -2585,7 +2940,51 @@ exports[`installing update when started when user checks for updates when no new
             >
               <span
                 class="icon"
-              />
+              >
+                <svg
+                  data-name="Layer 1"
+                  id="Layer_1"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+  
+                  <defs>
+                    <style>
+                      .cls-1{fill:none!important;}
+                    </style>
+                  </defs>
+                  
+  
+                  <rect
+                    class="cls-1"
+                    height="512"
+                    width="512"
+                  />
+                  <path
+                    d="M193.6,220,308.08,21.76A247.33,247.33,0,0,0,256,16,239.62,239.62,0,0,0,104.32,70l87.84,152.4Z"
+                  />
+                  <path
+                    d="M485,184A240.6,240.6,0,0,0,341,31.84L253.12,184Z"
+                  />
+                  <path
+                    d="M491.2,208H311.44l7,12L432.64,418A237.85,237.85,0,0,0,496,256,243,243,0,0,0,491.2,208Z"
+                  />
+                  <path
+                    d="M173,256,79.36,94C40.24,136.72,16,193.36,16,256a243,243,0,0,0,4.8,48H200.56Z"
+                  />
+                  <path
+                    d="M27,328A240.6,240.6,0,0,0,171,480.16L258.88,328Z"
+                  />
+                  <path
+                    d="M297.52,328l-93.6,162.24A247.33,247.33,0,0,0,256,496a239.62,239.62,0,0,0,151.68-54L319.84,289.6Z"
+                  />
+                  
+
+                </svg>
+                
+
+              </span>
             </i>
             <div
               class="flex justify-center"
@@ -2795,9 +3194,6 @@ exports[`installing update when started when user checks for updates when no new
         />
       </div>
     </div>
-    <div
-      class="Notifications flex column align-flex-end"
-    />
   </div>
 </body>
 `;

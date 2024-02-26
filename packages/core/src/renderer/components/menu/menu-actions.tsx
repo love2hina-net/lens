@@ -10,8 +10,8 @@ import { observable, makeObservable, reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import type { StrictReactNode } from "@k8slens/utilities";
 import { cssNames } from "@k8slens/utilities";
-import type { IconProps } from "../icon";
-import { Icon } from "../icon";
+import type { IconProps } from "@k8slens/icon";
+import { Icon } from "@k8slens/icon";
 import type { MenuProps } from "./menu";
 import { Menu, MenuItem } from "./menu";
 import isString from "lodash/isString";
@@ -19,7 +19,7 @@ import type { TooltipDecoratorProps } from "@k8slens/tooltip";
 import type { OpenConfirmDialog } from "../confirm-dialog/open.injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import openConfirmDialogInjectable from "../confirm-dialog/open.injectable";
-import getRandomIdInjectable from "../../../common/utils/get-random-id.injectable";
+import { getRandomIdInjectionToken } from "@k8slens/random";
 import autoBindReact from "auto-bind/react";
 
 export interface MenuActionsProps extends Partial<MenuProps> {
@@ -186,7 +186,7 @@ class NonInjectedMenuActions extends React.Component<MenuActionsProps & Dependen
 
 export const MenuActions = withInjectables<Dependencies, MenuActionsProps>(NonInjectedMenuActions, {
   getProps: (di, props) => ({
-    id: di.inject(getRandomIdInjectable)(),
+    id: di.inject(getRandomIdInjectionToken)(),
     openConfirmDialog: di.inject(openConfirmDialogInjectable),
     ...props,
   }),

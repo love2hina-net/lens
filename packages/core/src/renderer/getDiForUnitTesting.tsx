@@ -9,7 +9,7 @@ import { getOverrideFsWithFakes } from "../test-utils/override-fs-with-fakes";
 import terminalSpawningPoolInjectable from "./components/dock/terminal/terminal-spawning-pool.injectable";
 import hostedClusterIdInjectable from "./cluster-frame-context/hosted-cluster-id.injectable";
 import { runInAction } from "mobx";
-import requestAnimationFrameInjectable from "./components/animate/request-animation-frame.injectable";
+import { animateFeature, requestAnimationFrameInjectable } from "@k8slens/animate";
 import startTopbarStateSyncInjectable from "./components/layout/top-bar/start-state-sync.injectable";
 import watchHistoryStateInjectable from "./remote-helpers/watch-history-state.injectable";
 import legacyOnChannelListenInjectable from "./ipc/legacy-channel-listen.injectable";
@@ -21,6 +21,10 @@ import { registerFeature } from "@k8slens/feature-core";
 import { messagingFeature, testUtils as messagingTestUtils } from "@k8slens/messaging";
 import { routingFeature } from "@k8slens/routing";
 import { loggerFeature } from "@k8slens/logger";
+import { clusterSidebarFeature } from "@k8slens/cluster-sidebar";
+import { randomFeature } from "@k8slens/random";
+import { kubeApiSpecificsFeature } from "@k8slens/kube-api-specifics";
+import { notificationsFeature } from "@k8slens/notifications";
 
 export const getDiForUnitTesting = () => {
   const environment = "renderer";
@@ -38,6 +42,11 @@ export const getDiForUnitTesting = () => {
       messagingTestUtils.messagingFeatureForUnitTesting,
       routingFeature,
       loggerFeature,
+      animateFeature,
+      clusterSidebarFeature,
+      randomFeature,
+      kubeApiSpecificsFeature,
+      notificationsFeature,
     );
   });
 

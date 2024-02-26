@@ -11,7 +11,7 @@ import { DrawerItem, DrawerTitle } from "../drawer";
 import { Badge } from "../badge";
 import { Link } from "react-router-dom";
 import type { KubeObjectDetailsProps } from "../kube-object-details";
-import type { StorageClassApi } from "../../../common/k8s-api/endpoints";
+import type { StorageClassApi } from "@k8slens/kube-api";
 import { PersistentVolumeClaim } from "@k8slens/kube-object";
 import type { Logger } from "@k8slens/logger";
 import { withInjectables } from "@ogre-tools/injectable-react";
@@ -20,7 +20,7 @@ import type { PodStore } from "../workloads-pods/store";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 import podStoreInjectable from "../workloads-pods/store.injectable";
 import { stopPropagation } from "@k8slens/utilities";
-import storageClassApiInjectable from "../../../common/k8s-api/endpoints/storage-class.api.injectable";
+import { storageClassApiInjectable } from "@k8slens/kube-api-specifics";
 import { loggerInjectionToken } from "@k8slens/logger";
 
 export interface PersistentVolumeClaimDetailsProps extends KubeObjectDetailsProps<PersistentVolumeClaim> {

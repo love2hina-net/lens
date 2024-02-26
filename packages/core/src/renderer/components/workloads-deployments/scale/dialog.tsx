@@ -13,15 +13,15 @@ import type { DialogProps } from "../../dialog";
 import { Dialog } from "../../dialog";
 import { Wizard, WizardStep } from "../../wizard";
 import type { Deployment } from "@k8slens/kube-object";
-import { Icon } from "../../icon";
+import { Icon } from "@k8slens/icon";
 import { Slider } from "../../slider";
 import { cssNames } from "@k8slens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import deploymentApiInjectable from "../../../../common/k8s-api/endpoints/deployment.api.injectable";
+import { deploymentApiInjectable } from "@k8slens/kube-api-specifics";
 import deploymentScaleDialogStateInjectable from "./dialog-state.injectable";
-import type { ShowCheckedErrorNotification } from "../../notifications/show-checked-error.injectable";
-import showCheckedErrorNotificationInjectable from "../../notifications/show-checked-error.injectable";
-import type { DeploymentApi } from "../../../../common/k8s-api/endpoints";
+import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
+import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import type { DeploymentApi } from "@k8slens/kube-api";
 
 export interface DeploymentScaleDialogProps extends Partial<DialogProps> {
 }

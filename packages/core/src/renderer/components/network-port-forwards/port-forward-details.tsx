@@ -11,13 +11,12 @@ import type { PortForwardItem } from "../../port-forward";
 import { portForwardAddress } from "../../port-forward";
 import { Drawer, DrawerItem } from "../drawer";
 import { cssNames } from "@k8slens/utilities";
-import type { PodApi, ServiceApi } from "../../../common/k8s-api/endpoints";
+import type { PodApi, ServiceApi } from "@k8slens/kube-api";
 import { PortForwardMenu } from "./port-forward-menu";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import serviceApiInjectable from "../../../common/k8s-api/endpoints/service.api.injectable";
+import { serviceApiInjectable, podApiInjectable } from "@k8slens/kube-api-specifics";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
-import podApiInjectable from "../../../common/k8s-api/endpoints/pod.api.injectable";
 
 export interface PortForwardDetailsProps {
   portForward: PortForwardItem;

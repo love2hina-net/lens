@@ -8,8 +8,7 @@ import React from "react";
 import type { RenderResult } from "@testing-library/react";
 import { fireEvent } from "@testing-library/react";
 import { routeSpecificComponentInjectionToken } from "../../renderer/routes/route-specific-component-injection-token";
-import type { SidebarItemRegistration } from "../../renderer/components/layout/sidebar-items.injectable";
-import { sidebarItemsInjectionToken } from "../../renderer/components/layout/sidebar-items.injectable";
+import { sidebarItemInjectionToken } from "@k8slens/cluster-sidebar";
 import { computed, runInAction } from "mobx";
 import { noop } from "lodash/fp";
 import routeIsActiveInjectable from "../../renderer/routes/route-is-active.injectable";
@@ -44,9 +43,12 @@ describe("cluster - sidebar and tab navigation for core", () => {
     beforeEach(() => {
       builder.beforeWindowStart(({ windowDi }) => {
         runInAction(() => {
-          windowDi.register(testRouteInjectable);
-          windowDi.register(testRouteComponentInjectable);
-          windowDi.register(testSidebarItemsInjectable);
+          windowDi.register(
+            testRouteInjectable,
+            testRouteComponentInjectable,
+            someParentSidebarItemInjectable,
+            someChildSidebarItemInjectable,
+          );
         });
       });
     });
@@ -68,13 +70,13 @@ describe("cluster - sidebar and tab navigation for core", () => {
       });
 
       it("parent is highlighted", () => {
-        const parent = rendered.queryByTestId("sidebar-item-some-parent-id");
+        const parent = rendered.queryByTestId("sidebar-item-some-parent");
 
         expect(parent?.dataset.isActiveTest).toBe("true");
       });
 
       it("parent sidebar item is not expanded", () => {
-        const child = rendered.queryByTestId("sidebar-item-some-child-id");
+        const child = rendered.queryByTestId("sidebar-item-some-child");
 
         expect(child).toBeNull();
       });
@@ -93,7 +95,7 @@ describe("cluster - sidebar and tab navigation for core", () => {
             "/some-directory-for-app-data/some-product-name/lens-local-storage/some-cluster-id.json",
             {
               sidebar: {
-                expanded: { "some-parent-id": true },
+                expanded: { "sidebar-item-some-parent": true },
                 width: 200,
               },
             },
@@ -108,13 +110,13 @@ describe("cluster - sidebar and tab navigation for core", () => {
       });
 
       it("parent sidebar item is not highlighted", () => {
-        const parent = rendered.queryByTestId("sidebar-item-some-parent-id");
+        const parent = rendered.queryByTestId("sidebar-item-some-parent");
 
         expect(parent?.dataset.isActiveTest).toBe("false");
       });
 
       it("parent sidebar item is expanded", () => {
-        const child = rendered.queryByTestId("sidebar-item-some-child-id");
+        const child = rendered.queryByTestId("sidebar-item-some-child");
 
         expect(child).not.toBeNull();
       });
@@ -144,7 +146,7 @@ describe("cluster - sidebar and tab navigation for core", () => {
       });
 
       it("parent sidebar item is not expanded", () => {
-        const child = rendered.queryByTestId("sidebar-item-some-child-id");
+        const child = rendered.queryByTestId("sidebar-item-some-child");
 
         expect(child).toBeNull();
       });
@@ -171,7 +173,7 @@ describe("cluster - sidebar and tab navigation for core", () => {
       });
 
       it("parent sidebar item is not expanded", () => {
-        const child = rendered.queryByTestId("sidebar-item-some-child-id");
+        const child = rendered.queryByTestId("sidebar-item-some-child");
 
         expect(child).toBeNull();
       });
@@ -191,13 +193,13 @@ describe("cluster - sidebar and tab navigation for core", () => {
       });
 
       it("parent sidebar item is not highlighted", () => {
-        const parent = rendered.queryByTestId("sidebar-item-some-parent-id");
+        const parent = rendered.queryByTestId("sidebar-item-some-parent");
 
         expect(parent?.dataset.isActiveTest).toBe("false");
       });
 
       it("parent sidebar item is not expanded", () => {
-        const child = rendered.queryByTestId("sidebar-item-some-child-id");
+        const child = rendered.queryByTestId("sidebar-item-some-child");
 
         expect(child).toBeNull();
       });
@@ -205,7 +207,7 @@ describe("cluster - sidebar and tab navigation for core", () => {
       describe("when a parent sidebar item is expanded", () => {
         beforeEach(() => {
           const parentLink = rendered.getByTestId(
-            "sidebar-item-link-for-some-parent-id",
+            "link-for-sidebar-item-some-parent",
           );
 
           fireEvent.click(parentLink);
@@ -216,13 +218,13 @@ describe("cluster - sidebar and tab navigation for core", () => {
         });
 
         it("parent sidebar item is not highlighted", () => {
-          const parent = rendered.queryByTestId("sidebar-item-some-parent-id");
+          const parent = rendered.queryByTestId("sidebar-item-some-parent");
 
           expect(parent?.dataset.isActiveTest).toBe("false");
         });
 
         it("parent sidebar item is expanded", () => {
-          const child = rendered.queryByTestId("sidebar-item-some-child-id");
+          const child = rendered.queryByTestId("sidebar-item-some-child");
 
           expect(child).not.toBeNull();
         });
@@ -230,7 +232,7 @@ describe("cluster - sidebar and tab navigation for core", () => {
         describe("when a child of the parent is selected", () => {
           beforeEach(() => {
             const childLink = rendered.getByTestId(
-              "sidebar-item-link-for-some-child-id",
+              "link-for-sidebar-item-some-child",
             );
 
             fireEvent.click(childLink);
@@ -241,13 +243,13 @@ describe("cluster - sidebar and tab navigation for core", () => {
           });
 
           it("parent is highlighted", () => {
-            const parent = rendered.queryByTestId("sidebar-item-some-parent-id");
+            const parent = rendered.queryByTestId("sidebar-item-some-parent");
 
             expect(parent?.dataset.isActiveTest).toBe("true");
           });
 
           it("child is highlighted", () => {
-            const child = rendered.queryByTestId("sidebar-item-some-child-id");
+            const child = rendered.queryByTestId("sidebar-item-some-child");
 
             expect(child?.dataset.isActiveTest).toBe("true");
           });
@@ -281,7 +283,7 @@ describe("cluster - sidebar and tab navigation for core", () => {
 
             expect(actual).toEqual({
               sidebar: {
-                expanded: { "some-parent-id": true },
+                expanded: { "sidebar-item-some-parent": true },
                 width: 200,
               },
             });
@@ -292,36 +294,34 @@ describe("cluster - sidebar and tab navigation for core", () => {
   });
 });
 
-const testSidebarItemsInjectable = getInjectable({
-  id: "some-sidebar-items-injectable",
+const someParentSidebarItemInjectable = getInjectable({
+  id: "sidebar-item-some-parent",
+  instantiate: () => ({
+    parentId: null,
+    title: "Some parent",
+    onClick: noop,
+    getIcon: () => <div data-testid="some-icon-for-parent" />,
+    orderNumber: 42,
+  }),
+  injectionToken: sidebarItemInjectionToken,
+});
 
+const someChildSidebarItemInjectable = getInjectable({
+  id: "sidebar-item-some-child",
   instantiate: (di) => {
     const route = di.inject(testRouteInjectable);
     const navigateToRoute = di.inject(navigateToRouteInjectionToken);
     const routeIsActive = di.inject(routeIsActiveInjectable, route);
 
-    return computed((): SidebarItemRegistration[] => [
-      {
-        id: "some-parent-id",
-        parentId: null,
-        title: "Some parent",
-        onClick: noop,
-        getIcon: () => <div data-testid="some-icon-for-parent" />,
-        orderNumber: 42,
-      },
-
-      {
-        id: "some-child-id",
-        parentId: "some-parent-id",
-        title: "Some child",
-        onClick: () => navigateToRoute(route),
-        isActive: routeIsActive,
-        orderNumber: 42,
-      },
-    ]);
+    return {
+      parentId: someParentSidebarItemInjectable.id,
+      title: "Some child",
+      onClick: () => navigateToRoute(route),
+      isActive: routeIsActive,
+      orderNumber: 168,
+    };
   },
-
-  injectionToken: sidebarItemsInjectionToken,
+  injectionToken: sidebarItemInjectionToken,
 });
 
 const testRouteInjectable = getInjectable({

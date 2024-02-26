@@ -10,9 +10,9 @@ import { observer } from "mobx-react";
 import React from "react";
 
 import { Button } from "@k8slens/button";
-import type { ShowNotification } from "../notifications";
+import type { ShowNotification } from "@k8slens/notifications";
 import { Dialog } from "../dialog";
-import { Icon } from "../icon";
+import { Icon } from "@k8slens/icon";
 import { Select } from "../select";
 import { Checkbox } from "../checkbox";
 import { withInjectables } from "@ogre-tools/injectable-react";
@@ -26,7 +26,7 @@ import type { RequestDeleteCluster } from "../../../features/cluster/delete-dial
 import requestDeleteClusterInjectable from "../../../features/cluster/delete-dialog/renderer/request-delete.injectable";
 import type { SaveKubeconfig } from "./save-kubeconfig.injectable";
 import saveKubeconfigInjectable from "./save-kubeconfig.injectable";
-import showErrorNotificationInjectable from "../notifications/show-error-notification.injectable";
+import { showErrorNotificationInjectable } from "@k8slens/notifications";
 import { isCurrentContext } from "./is-current-context";
 import type { IsInLocalKubeconfig } from "./is-in-local-kubeconfig.injectable";
 import isInLocalKubeconfigInjectable from "./is-in-local-kubeconfig.injectable";

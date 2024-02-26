@@ -11,7 +11,7 @@ import { InfoPanel } from "../info-panel";
 import { Badge } from "../../badge";
 import { NamespaceSelect } from "../../namespaces/namespace-select";
 import { prevDefault } from "@k8slens/utilities";
-import { Icon } from "../../icon";
+import { Icon } from "@k8slens/icon";
 import { Button } from "@k8slens/button";
 import { LogsDialog } from "../../dialog/logs-dialog";
 import { Select } from "../../select";
@@ -20,7 +20,7 @@ import { EditorPanel } from "../editor-panel";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import type { InstallChartModel } from "./install-chart-model.injectable";
 import installChartModelInjectable from "./install-chart-model.injectable";
-import { Spinner } from "../../spinner";
+import { Spinner } from "@k8slens/spinner";
 
 export interface InstallChartProps {
   tabId: string;

@@ -3,30 +3,25 @@ import { execInjectable } from "./exec.injectable";
 import { logSuccessInjectable } from "./log-success.injectable";
 import { logWarningInjectable } from "./log-warning.injectable";
 
-export type DoWebpackBuild = () => Promise<void>;
+export type DoWebpackBuild = ({ watch }: { watch: boolean }) => Promise<void>;
 
 export const doWebpackBuildInjectable = getInjectable({
   id: "do-webpack-build",
 
-  instantiate: (di) => {
+  instantiate: (di): DoWebpackBuild => {
     const exec = di.inject(execInjectable);
     const logSuccess = di.inject(logSuccessInjectable);
     const logWarning = di.inject(logWarningInjectable);
 
-    const execWithResultHandling = async (command: string) => {
-      const { stdout, stderr } = await exec(command);
+    return async ({ watch }) => {
+      const execResult = exec(watch ? "webpack --watch" : "webpack");
 
-      if (stderr) {
-        logWarning(`Warning while executing "${command}": ${stderr}`);
-      } else if (stdout) {
-        logSuccess(stdout);
-      }
-    };
+      execResult.stdout?.on("data", logSuccess);
+      execResult.stderr?.on("data", logWarning);
 
-    return async () => {
-      await execWithResultHandling("webpack");
-
-      await execWithResultHandling("linkable-push");
+      return new Promise<void>((resolve) => {
+        execResult.on("exit", resolve);
+      });
     };
   },
 });

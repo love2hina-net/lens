@@ -19,8 +19,8 @@ import { withInjectables } from "@ogre-tools/injectable-react";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.injectable";
 import { loggerInjectionToken } from "@k8slens/logger";
-import type { NamespaceApi } from "../../../common/k8s-api/endpoints";
-import namespaceApiInjectable from "../../../common/k8s-api/endpoints/namespace.api.injectable";
+import type { NamespaceApi } from "@k8slens/kube-api";
+import { namespaceApiInjectable } from "@k8slens/kube-api-specifics";
 
 export interface KubeObjectMetaProps {
   object: KubeObject;

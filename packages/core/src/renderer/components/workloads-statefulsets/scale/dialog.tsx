@@ -13,15 +13,15 @@ import { observer } from "mobx-react";
 import type { DialogProps } from "../../dialog";
 import { Dialog } from "../../dialog";
 import { Wizard, WizardStep } from "../../wizard";
-import { Icon } from "../../icon";
+import { Icon } from "@k8slens/icon";
 import { Slider } from "../../slider";
 import { cssNames } from "@k8slens/utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import statefulSetApiInjectable from "../../../../common/k8s-api/endpoints/stateful-set.api.injectable";
+import { statefulSetApiInjectable } from "@k8slens/kube-api-specifics";
 import statefulSetDialogStateInjectable from "./dialog-state.injectable";
-import type { ShowCheckedErrorNotification } from "../../notifications/show-checked-error.injectable";
-import showCheckedErrorNotificationInjectable from "../../notifications/show-checked-error.injectable";
-import type { StatefulSetApi } from "../../../../common/k8s-api/endpoints";
+import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
+import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import type { StatefulSetApi } from "@k8slens/kube-api";
 
 export interface StatefulSetScaleDialogProps extends Partial<DialogProps> {
 }

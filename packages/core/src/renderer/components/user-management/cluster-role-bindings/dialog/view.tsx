@@ -14,7 +14,7 @@ import type { ClusterRole, ServiceAccount, Subject } from "@k8slens/kube-object"
 import type { DialogProps } from "../../../dialog";
 import { Dialog } from "../../../dialog";
 import { EditableList } from "../../../editable-list";
-import { Icon } from "../../../icon";
+import { Icon } from "@k8slens/icon";
 import { SubTitle } from "../../../layout/sub-title";
 import { onMultiSelectFor, Select } from "../../../select";
 import { Wizard, WizardStep } from "../../../wizard";
@@ -37,8 +37,8 @@ import type { ShowDetails } from "../../../kube-detail-params/show-details.injec
 import type { ClusterRoleBindingStore } from "../store";
 import clusterRoleBindingStoreInjectable from "../store.injectable";
 import showDetailsInjectable from "../../../kube-detail-params/show-details.injectable";
-import type { ShowCheckedErrorNotification } from "../../../notifications/show-checked-error.injectable";
-import showCheckedErrorNotificationInjectable from "../../../notifications/show-checked-error.injectable";
+import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
+import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
 
 export interface ClusterRoleBindingDialogProps extends Partial<DialogProps> {
 }

@@ -21,11 +21,13 @@
     "postdev": "lerna watch -- lerna run build --stream --include-dependents --scope \\$LERNA_PACKAGE_NAME",
     "prestart-dev": "cd ./open-lens && npm run build:tray-icons && npm run download:binaries",
     "start-dev": "lerna run start",
+    "postinstall": "linkable",
     "lint": "lerna run lint --stream --no-bail",
     "lint:fix": "lerna run lint:fix --stream",
     "mkdocs:serve-local": "docker build -t mkdocs-serve-local:latest mkdocs/ && docker run --rm -it -p 8000:8000 -v ${PWD}:/docs mkdocs-serve-local:latest",
     "mkdocs:verify": "docker build -t mkdocs-serve-local:latest mkdocs/ && docker run --rm -v ${PWD}:/docs mkdocs-serve-local:latest build --strict",
     "test:unit": "lerna run --stream test:unit --no-bail",
+    "test:unit:updatesnapshot": "lerna run --stream test:unit --no-bail -- -u",
     "test:unit:watch": "jest --watch",
     "test:integration": "lerna run --stream test:integration --no-bail",
     "bump-version": "lerna version --no-git-tag-version --no-push",
@@ -38,7 +40,7 @@
     "@types/react": "^17"
   },
   "devDependencies": {
-    "@ogre-tools/linkable": "^16.1.0",
+    "@ogre-tools/linkable": "^17.2.0",
     "adr": "^1.4.3",
     "cross-env": "^7.0.3",
     "lerna": "^6.6.1",
