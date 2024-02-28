@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { sendMessageToChannelInjectionToken } from "@k8slens/messaging";
+import { sendMessageToChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 import { rootFrameHasRenderedChannel } from "../../../common/root-frame/root-frame-rendered-channel";
 
 const broadcastThatRootFrameIsRenderedInjectable = getInjectable({

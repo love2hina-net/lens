@@ -4,7 +4,7 @@
  */
 import React from "react";
 import styles from "./horizontal-line.module.scss";
-import { cssNames } from "@k8slens/utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 
 interface HorizontalLineProps {
   size?: "xxs" | "xs" | "sm" | "md" | "lg" | "xl";

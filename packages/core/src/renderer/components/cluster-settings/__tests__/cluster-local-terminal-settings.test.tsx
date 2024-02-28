@@ -12,7 +12,7 @@ import { Cluster } from "../../../../common/cluster/cluster";
 import { getDiForUnitTesting } from "../../../getDiForUnitTesting";
 import type { DiRender } from "../../test-utils/renderFor";
 import { renderFor } from "../../test-utils/renderFor";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 import statInjectable from "../../../../common/fs/stat.injectable";
 import loadKubeconfigInjectable from "../../../../common/cluster/load-kubeconfig.injectable";
 

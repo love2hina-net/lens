@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/webpack",
+  "name": "@love2hina-net/k8slens.webpack",
   "private": false,
   "version": "6.5.0",
   "description": "Webpack configurations and scripts for Lens packages.",
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@async-fn/jest": "^1.6.4",
-    "@k8slens/typescript": "^6.5.0",
+    "@love2hina-net/k8slens.typescript": "^6.5.0",
     "@ogre-tools/injectable-extension-for-auto-registration": "^17.2.0",
     "@ogre-tools/test-utils": "^17.2.0",
     "ts-node": "^10.9.1",

@@ -7,7 +7,7 @@ import "./table-row.scss";
 
 import type { CSSProperties } from "react";
 import React from "react";
-import { cssNames } from "@k8slens/utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 
 export type TableRowElem<Item> = React.ReactElement<TableRowProps<Item>>;
 

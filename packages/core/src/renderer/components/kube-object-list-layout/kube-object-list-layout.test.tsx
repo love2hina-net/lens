@@ -22,7 +22,7 @@ import hostedClusterInjectable from "../../cluster-frame-context/hosted-cluster.
 import type { PodStore } from "../workloads-pods/store";
 import { Cluster } from "../../../common/cluster/cluster";
 import isTableColumnHiddenInjectable from "../../../features/user-preferences/common/is-table-column-hidden.injectable";
-import { podListLayoutColumnInjectionToken } from "@k8slens/list-layout";
+import { podListLayoutColumnInjectionToken } from "@love2hina-net/k8slens.list-layout";
 
 describe("kube-object-list-layout", () => {
   let di: DiContainer;

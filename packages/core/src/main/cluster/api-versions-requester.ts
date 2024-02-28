@@ -4,7 +4,7 @@
  */
 
 import { getInjectionToken } from "@ogre-tools/injectable";
-import type { AsyncResult } from "@k8slens/utilities";
+import type { AsyncResult } from "@love2hina-net/k8slens.utilities";
 
 export interface KubeResourceListGroup {
   group: string;

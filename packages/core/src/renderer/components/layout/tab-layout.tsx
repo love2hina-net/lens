@@ -8,13 +8,13 @@ import "./tab-layout.scss";
 import React from "react";
 import { matchPath, Redirect, Route, Switch } from "react-router";
 import { observer } from "mobx-react";
-import type { IClassName, StrictReactNode } from "@k8slens/utilities";
-import { cssNames } from "@k8slens/utilities";
+import type { IClassName, StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 import { Tab, Tabs } from "../tabs";
-import { ErrorBoundary } from "@k8slens/error-boundary";
+import { ErrorBoundary } from "@love2hina-net/k8slens.error-boundary";
 import type { ObservableHistory } from "mobx-observable-history";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { observableHistoryInjectionToken } from "@k8slens/routing";
+import { observableHistoryInjectionToken } from "@love2hina-net/k8slens.routing";
 import type { Navigate } from "../../navigation/navigate.injectable";
 import navigateInjectable from "../../navigation/navigate.injectable";
 

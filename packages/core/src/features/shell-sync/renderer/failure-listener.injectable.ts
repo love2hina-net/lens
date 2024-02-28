@@ -2,8 +2,8 @@
  * Copyright (c) OpenLens Authors. All rights reserved.
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
-import { getMessageChannelListenerInjectable } from "@k8slens/messaging";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
+import { getMessageChannelListenerInjectable } from "@love2hina-net/k8slens.messaging";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 import { shellSyncFailedChannel } from "../common/failure-channel";
 
 const shellSyncFailureListenerInjectable = getMessageChannelListenerInjectable({

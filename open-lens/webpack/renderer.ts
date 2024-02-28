@@ -22,7 +22,7 @@ import {
   htmlTemplate,
   publicPath,
 } from "./vars";
-import corePackageJson from "@k8slens/core/package.json";
+import corePackageJson from "@love2hina-net/k8slens.core/package.json";
 
 const renderer: webpack.Configuration = {
   target: "electron-renderer",
@@ -119,7 +119,7 @@ const renderer: webpack.Configuration = {
       patterns: [
         {
           from: path.resolve(
-            path.dirname(require.resolve("@k8slens/core/package.json")),
+            path.dirname(require.resolve("@love2hina-net/k8slens.core/package.json")),
             corePackageJson.exports["./fonts"]
           ),
           to: "fonts/[name][ext]",

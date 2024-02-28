@@ -1,1 +1,1 @@
-module.exports = require("@k8slens/webpack").configForReact;
+module.exports = require("@love2hina-net/k8slens.webpack").configForReact;

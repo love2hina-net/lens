@@ -4,7 +4,7 @@
  */
 import React from "react";
 import styles from "./webhook-config.module.css";
-import type { Webhook } from "@k8slens/kube-object";
+import type { Webhook } from "@love2hina-net/k8slens.kube-object";
 import { DrawerItem } from "../drawer";
 import { Badge } from "../badge";
 

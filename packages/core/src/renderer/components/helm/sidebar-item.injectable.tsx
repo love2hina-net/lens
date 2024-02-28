@@ -4,8 +4,8 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import React from "react";
-import { sidebarItemInjectionToken } from "@k8slens/cluster-sidebar";
-import { Icon } from "@k8slens/icon";
+import { sidebarItemInjectionToken } from "@love2hina-net/k8slens.cluster-sidebar";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import { noop } from "lodash/fp";
 
 const helmSidebarItemInjectable = getInjectable({

@@ -4,8 +4,8 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import apiBaseInjectable from "../../../common/k8s-api/api-base.injectable";
-import type { ServiceAccount } from "@k8slens/kube-object";
-import { urlBuilderFor } from "@k8slens/utilities";
+import type { ServiceAccount } from "@love2hina-net/k8slens.kube-object";
+import { urlBuilderFor } from "@love2hina-net/k8slens.utilities";
 import openKubeconfigDialogInjectable from "./open.injectable";
 
 export type OpenServiceAccountKubeConfigDialog = (account: ServiceAccount) => void;

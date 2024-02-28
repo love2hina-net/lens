@@ -5,9 +5,9 @@
 
 import { observer } from "mobx-react";
 import React from "react";
-import type { Pod } from "@k8slens/kube-object";
+import type { Pod } from "@love2hina-net/k8slens.kube-object";
 import { DrawerTitle } from "../../../drawer";
-import { Icon } from "@k8slens/icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import { VolumeVariant } from "./variant";
 
 export interface PodVolumesProps {

@@ -10,8 +10,8 @@ import type {
   ResourceDescriptor,
 } from "../kube-api";
 import { KubeApi } from "../kube-api";
-import type { KubeStatusData, PodLogsQuery } from "@k8slens/kube-object";
-import { isKubeStatusData, KubeStatus, Pod } from "@k8slens/kube-object";
+import type { KubeStatusData, PodLogsQuery } from "@love2hina-net/k8slens.kube-object";
+import { isKubeStatusData, KubeStatus, Pod } from "@love2hina-net/k8slens.kube-object";
 
 export class PodApi extends KubeApi<Pod> {
   constructor(deps: KubeApiDependencies, opts?: DerivedKubeApiOptions) {

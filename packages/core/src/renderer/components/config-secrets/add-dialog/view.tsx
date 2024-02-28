@@ -14,22 +14,22 @@ import { Dialog } from "../../dialog";
 import { Wizard, WizardStep } from "../../wizard";
 import { Input } from "../../input";
 import { systemName } from "../../input/input_validators";
-import type { SecretApi } from "@k8slens/kube-api";
-import { reverseSecretTypeMap, SecretType } from "@k8slens/kube-object";
+import type { SecretApi } from "@love2hina-net/k8slens.kube-api";
+import { reverseSecretTypeMap, SecretType } from "@love2hina-net/k8slens.kube-object";
 import { SubTitle } from "../../layout/sub-title";
 import { NamespaceSelect } from "../../namespaces/namespace-select";
 import { Select } from "../../select";
-import { Icon } from "@k8slens/icon";
-import { base64, iter, object } from "@k8slens/utilities";
+import { Icon } from "@love2hina-net/k8slens.icon";
+import { base64, iter, object } from "@love2hina-net/k8slens.utilities";
 import upperFirst from "lodash/upperFirst";
 import type { ShowDetails } from "../../kube-detail-params/show-details.injectable";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import closeAddSecretDialogInjectable from "./close.injectable";
-import { secretApiInjectable } from "@k8slens/kube-api-specifics";
+import { secretApiInjectable } from "@love2hina-net/k8slens.kube-api-specifics";
 import showDetailsInjectable from "../../kube-detail-params/show-details.injectable";
 import isAddSecretDialogOpenInjectable from "./is-open.injectable";
-import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
-import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import type { ShowCheckedErrorNotification } from "@love2hina-net/k8slens.notifications";
+import { showCheckedErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 
 export interface AddSecretDialogProps extends Partial<DialogProps> {
 }

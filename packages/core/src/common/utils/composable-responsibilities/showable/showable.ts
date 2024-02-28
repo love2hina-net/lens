@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { isBoolean } from "@k8slens/utilities";
+import { isBoolean } from "@love2hina-net/k8slens.utilities";
 import type { IComputedValue } from "mobx";
 
 export interface Showable {

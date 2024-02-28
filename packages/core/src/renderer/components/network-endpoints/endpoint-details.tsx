@@ -9,11 +9,11 @@ import React from "react";
 import { observer } from "mobx-react";
 import { DrawerTitle } from "../drawer";
 import type { KubeObjectDetailsProps } from "../kube-object-details";
-import { Endpoints } from "@k8slens/kube-object";
+import { Endpoints } from "@love2hina-net/k8slens.kube-object";
 import { EndpointSubsetList } from "./endpoint-subset-list";
-import type { Logger } from "@k8slens/logger";
+import type { Logger } from "@love2hina-net/k8slens.logger";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 
 export interface EndpointsDetailsProps extends KubeObjectDetailsProps<Endpoints> {
 }

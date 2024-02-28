@@ -7,12 +7,12 @@ import "./setting-layout.scss";
 
 import React from "react";
 import { observer } from "mobx-react";
-import type { IClassName, StrictReactNode } from "@k8slens/utilities";
-import { cssNames } from "@k8slens/utilities";
+import type { IClassName, StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 import { CloseButton } from "./close-button";
-import { getLegacyGlobalDiForExtensionApi } from "@k8slens/legacy-global-di";
+import { getLegacyGlobalDiForExtensionApi } from "@love2hina-net/k8slens.legacy-global-di";
 import navigateToCatalogInjectable from "../../../common/front-end-routing/routes/catalog/navigate-to-catalog.injectable";
-import { observableHistoryInjectionToken } from "@k8slens/routing";
+import { observableHistoryInjectionToken } from "@love2hina-net/k8slens.routing";
 
 export interface SettingLayoutProps extends React.DOMAttributes<any> {
   className?: IClassName;

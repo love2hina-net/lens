@@ -4,7 +4,7 @@
  */
 
 import type { Pod } from "./pod";
-import { object } from "@k8slens/utilities";
+import { object } from "@love2hina-net/k8slens.utilities";
 import type { TypedLocalObjectReference, LabelSelector, NamespaceScopedMetadata } from "../api-types";
 import { KubeObject } from "../kube-object";
 import type { ResourceRequirements } from "../types/resource-requirements";

@@ -8,10 +8,10 @@ import "./editable-list.scss";
 import { observer } from "mobx-react";
 import React from "react";
 
-import { Icon } from "@k8slens/icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import type { InputProps, InputValidator } from "../input";
 import { Input } from "../input";
-import type { StrictReactNode, SingleOrMany } from "@k8slens/utilities";
+import type { StrictReactNode, SingleOrMany } from "@love2hina-net/k8slens.utilities";
 import autoBindReact from "auto-bind/react";
 
 export interface EditableListProps<T> {

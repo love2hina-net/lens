@@ -11,7 +11,7 @@ import { withInjectables } from "@ogre-tools/injectable-react";
 import type { IComputedValue } from "mobx";
 import type { Hotbar } from "../../../features/hotbar/storage/common/hotbar";
 import activeHotbarInjectable from "../../../features/hotbar/storage/common/active.injectable";
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 
 interface Dependencies {
   activeHotbar: IComputedValue<Hotbar | undefined>;

@@ -7,7 +7,7 @@ import moment from "moment";
 
 import type { DerivedKubeApiOptions, KubeApiDependencies, NamespacedResourceDescriptor } from "../kube-api";
 import { KubeApi } from "../kube-api";
-import { Deployment } from "@k8slens/kube-object";
+import { Deployment } from "@love2hina-net/k8slens.kube-object";
 
 export class DeploymentApi extends KubeApi<Deployment> {
   constructor(deps: KubeApiDependencies, opts?: DerivedKubeApiOptions) {

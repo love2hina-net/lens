@@ -4,10 +4,10 @@
  */
 import React from "react";
 import { getInjectable } from "@ogre-tools/injectable";
-import { rootFrameChildComponentInjectionToken } from "@k8slens/react-application";
+import { rootFrameChildComponentInjectionToken } from "@love2hina-net/k8slens.react-application";
 import { ClusterManager } from "./cluster-manager";
 import { computed } from "mobx";
-import { ErrorBoundary } from "@k8slens/error-boundary";
+import { ErrorBoundary } from "@love2hina-net/k8slens.error-boundary";
 
 const clusterManagerRootFrameChildComponentInjectable = getInjectable({
   id: "cluster-manager-root-frame-child-component",

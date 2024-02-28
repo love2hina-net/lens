@@ -10,10 +10,10 @@ import { ClusterMetadataKey } from "../../../common/cluster-types";
 import type { Cluster } from "../../../common/cluster/cluster";
 import { clusterRoute } from "../../router/route";
 import { isObject } from "lodash";
-import { isRequestError, object } from "@k8slens/utilities";
+import { isRequestError, object } from "@love2hina-net/k8slens.utilities";
 import type { GetMetrics } from "../../get-metrics.injectable";
 import getMetricsInjectable from "../../get-metrics.injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import prometheusHandlerInjectable from "../../cluster/prometheus-handler/prometheus-handler.injectable";
 import { runInAction } from "mobx";
 

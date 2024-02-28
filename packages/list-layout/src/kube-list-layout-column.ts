@@ -3,8 +3,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { KubeObject } from "@k8slens/kube-object";
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { KubeObject } from "@love2hina-net/k8slens.kube-object";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 import type { TableSortCallback, SearchFilter, TableCellProps } from "./list-layout-column";
 
 export interface BaseKubeObjectListLayoutColumn<K extends KubeObject> {

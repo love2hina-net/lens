@@ -5,8 +5,8 @@
 
 import "./radio.scss";
 import React, { useContext, useRef } from "react";
-import type { StrictReactNode, SingleOrMany } from "@k8slens/utilities";
-import { cssNames, noop } from "@k8slens/utilities";
+import type { StrictReactNode, SingleOrMany } from "@love2hina-net/k8slens.utilities";
+import { cssNames, noop } from "@love2hina-net/k8slens.utilities";
 
 export interface RadioGroupProps<T> {
   className?: string;

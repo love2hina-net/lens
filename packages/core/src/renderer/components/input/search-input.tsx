@@ -7,8 +7,8 @@ import "./search-input.scss";
 
 import React, { createRef } from "react";
 import { observer } from "mobx-react";
-import { cssNames } from "@k8slens/utilities";
-import { Icon } from "@k8slens/icon";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import type { InputProps } from "./input";
 import { Input } from "./input";
 import { withInjectables } from "@ogre-tools/injectable-react";

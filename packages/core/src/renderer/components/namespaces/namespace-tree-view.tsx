@@ -10,13 +10,13 @@ import { TreeItem, TreeView } from "@material-ui/lab";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import type { Namespace } from "@k8slens/kube-object";
+import type { Namespace } from "@love2hina-net/k8slens.kube-object";
 import { DrawerTitle } from "../drawer";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 import { SubnamespaceBadge } from "./subnamespace-badge";
 import hierarchicalNamespacesInjectable from "./hierarchical-namespaces.injectable";
-import { prevDefault } from "@k8slens/utilities";
+import { prevDefault } from "@love2hina-net/k8slens.utilities";
 import type { NamespaceTree } from "./store";
 
 interface NamespaceTreeViewProps {

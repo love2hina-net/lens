@@ -3,11 +3,11 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { IconProps } from "@k8slens/icon";
+import type { IconProps } from "@love2hina-net/k8slens.icon";
 import type React from "react";
 import type { PageTarget } from "../../routes/page-registration";
 import type { IComputedValue } from "mobx";
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 
 export interface ClusterPageMenuRegistration {
   id?: string;

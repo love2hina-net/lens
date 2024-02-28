@@ -8,12 +8,12 @@ import { validatePackage } from "./validate-package";
 import { getMessageFromError } from "../get-message-from-error/get-message-from-error";
 import React from "react";
 import type { InstallRequest } from "./attempt-install.injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import writeFileInjectable from "../../../../common/fs/write-file.injectable";
 import joinPathsInjectable from "../../../../common/path/join-paths.injectable";
 import tempDirectoryPathInjectable from "../../../../common/os/temp-directory-path.injectable";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
-import type { LensExtensionId, LensExtensionManifest } from "@k8slens/legacy-extensions";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
+import type { LensExtensionId, LensExtensionManifest } from "@love2hina-net/k8slens.legacy-extensions";
 
 export interface InstallRequestValidated {
   fileName: string;

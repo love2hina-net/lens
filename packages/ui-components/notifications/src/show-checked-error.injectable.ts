@@ -3,9 +3,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { JsonApiErrorParsed } from "@k8slens/json-api";
-import { loggerInjectionToken } from "@k8slens/logger";
-import type { Disposer } from "@k8slens/utilities";
+import { JsonApiErrorParsed } from "@love2hina-net/k8slens.json-api";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
+import type { Disposer } from "@love2hina-net/k8slens.utilities";
 import type { CreateNotificationOptions } from "./notifications.store";
 import { showErrorNotificationInjectable } from "./show-error-notification.injectable";
 

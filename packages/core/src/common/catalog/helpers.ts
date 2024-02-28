@@ -5,7 +5,7 @@
 
 import type { CatalogEntity } from "./catalog-entity";
 import GraphemeSplitter from "grapheme-splitter";
-import { hasOwnProperty, hasTypedProperty, isObject, isString, iter } from "@k8slens/utilities";
+import { hasOwnProperty, hasTypedProperty, isObject, isString, iter } from "@love2hina-net/k8slens.utilities";
 
 function getNameParts(name: string): string[] {
   const byWhitespace = name.split(/\s+/);

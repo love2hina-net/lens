@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import { restartAndInstallUpdateChannel } from "../common/restart-and-install-update-channel";
-import { sendMessageToChannelInjectionToken } from "@k8slens/messaging";
+import { sendMessageToChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 
 const restartAndInstallUpdateInjectable = getInjectable({
   id: "restart-and-install-update",

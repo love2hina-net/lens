@@ -9,7 +9,7 @@ import execFileWithInputInjectable from "./exec-file-with-input/exec-file-with-i
 import { getErrorMessage } from "../../../../../common/utils/get-error-message";
 import { map } from "lodash/fp";
 import { pipeline } from "@ogre-tools/fp";
-import type { KubeJsonApiData } from "@k8slens/kube-object";
+import type { KubeJsonApiData } from "@love2hina-net/k8slens.kube-object";
 
 export type CallForKubeResourcesByManifest = (
   namespace: string,

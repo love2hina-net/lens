@@ -9,10 +9,10 @@ import downloadPlatformUpdateInjectable from "./download-platform-update.injecta
 import type { AppUpdater } from "electron-updater";
 import type { AsyncFnMock } from "@async-fn/jest";
 import asyncFn from "@async-fn/jest";
-import { getPromiseStatus } from "@k8slens/test-utils";
+import { getPromiseStatus } from "@love2hina-net/k8slens.test-utils";
 import type { DiContainer } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
-import { noop } from "@k8slens/utilities";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
+import { noop } from "@love2hina-net/k8slens.utilities";
 
 describe("download-platform-update", () => {
   let downloadPlatformUpdate: DownloadPlatformUpdate;

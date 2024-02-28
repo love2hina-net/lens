@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerTransportInjectionToken } from "@k8slens/logger";
+import { loggerTransportInjectionToken } from "@love2hina-net/k8slens.logger";
 import type winston from "winston";
 import { MESSAGE } from "triple-beam";
 
@@ -14,7 +14,7 @@ import {
   ipcFileLoggerChannel,
 } from "../common/ipc-file-logger-channel";
 import rendererLogFileIdInjectable from "./renderer-log-file-id.injectable";
-import { sendMessageToChannelInjectionToken } from "@k8slens/messaging";
+import { sendMessageToChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 
 /**
  * Winston uses symbol property for the actual message.

@@ -7,10 +7,10 @@ import "./deployment-replicasets.scss";
 
 import React from "react";
 import { observer } from "mobx-react";
-import type { ReplicaSet } from "@k8slens/kube-object";
+import type { ReplicaSet } from "@love2hina-net/k8slens.kube-object";
 import { KubeObjectMenu } from "../kube-object-menu";
-import { Spinner } from "@k8slens/spinner";
-import { prevDefault, stopPropagation } from "@k8slens/utilities";
+import { Spinner } from "@love2hina-net/k8slens.spinner";
+import { prevDefault, stopPropagation } from "@love2hina-net/k8slens.utilities";
 import { DrawerTitle } from "../drawer";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 import { KubeObjectStatusIcon } from "../kube-object-status-icon";

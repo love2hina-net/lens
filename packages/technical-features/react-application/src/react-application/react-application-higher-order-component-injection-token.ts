@@ -1,4 +1,4 @@
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 import { getInjectionToken } from "@ogre-tools/injectable";
 import type React from "react";
 

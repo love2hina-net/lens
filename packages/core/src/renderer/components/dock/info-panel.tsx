@@ -8,16 +8,16 @@ import "./info-panel.scss";
 import React, { Component } from "react";
 import { computed, observable, reaction, makeObservable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
-import type { StrictReactNode } from "@k8slens/utilities";
-import { cssNames } from "@k8slens/utilities";
-import { Button } from "@k8slens/button";
-import { Icon } from "@k8slens/icon";
-import { Spinner } from "@k8slens/spinner";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
+import { Button } from "@love2hina-net/k8slens.button";
+import { Icon } from "@love2hina-net/k8slens.icon";
+import { Spinner } from "@love2hina-net/k8slens.spinner";
 import type { DockStore, TabId } from "./dock/store";
-import type { ShowNotification, ShowCheckedErrorNotification } from "@k8slens/notifications";
+import type { ShowNotification, ShowCheckedErrorNotification } from "@love2hina-net/k8slens.notifications";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import dockStoreInjectable from "./dock/store.injectable";
-import { showSuccessNotificationInjectable, showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import { showSuccessNotificationInjectable, showCheckedErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 
 export interface InfoPanelProps extends OptionalProps {
   tabId: TabId;

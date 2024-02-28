@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/jest",
+  "name": "@love2hina-net/k8slens.jest",
   "private": false,
   "version": "6.5.0",
   "description": "Jest configuration and scripts for Lens packages.",

@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { array } from "@k8slens/utilities";
+import { array } from "@love2hina-net/k8slens.utilities";
 import autoBind from "auto-bind";
 import Joi from "joi";
 

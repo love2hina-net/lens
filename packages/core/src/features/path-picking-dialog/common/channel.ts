@@ -4,7 +4,7 @@
  */
 
 import type { OpenDialogOptions } from "electron";
-import type { RequestChannel } from "@k8slens/messaging";
+import type { RequestChannel } from "@love2hina-net/k8slens.messaging";
 
 export type PathPickingResponse = {
   canceled: true;

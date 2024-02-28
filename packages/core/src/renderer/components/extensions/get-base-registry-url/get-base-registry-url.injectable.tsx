@@ -6,10 +6,10 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import React from "react";
 import execFileInjectable from "../../../../common/fs/exec-file.injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import { defaultExtensionRegistryUrl } from "../../../../features/user-preferences/common/preferences-helpers";
 import userPreferencesStateInjectable from "../../../../features/user-preferences/common/state.injectable";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 
 const getBaseRegistryUrlInjectable = getInjectable({
   id: "get-base-registry-url",

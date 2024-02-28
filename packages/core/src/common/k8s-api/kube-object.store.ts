@@ -4,16 +4,16 @@
  */
 
 import { action, computed, makeObservable, observable, reaction } from "mobx";
-import type { Disposer } from "@k8slens/utilities";
-import { waitUntilDefined, includes, rejectPromiseBy, object } from "@k8slens/utilities";
-import type { KubeJsonApiDataFor, KubeObject } from "@k8slens/kube-object";
-import { KubeStatus } from "@k8slens/kube-object";
-import type { IKubeWatchEvent, KubeApiQueryParams, KubeApi, KubeApiWatchCallback } from "@k8slens/kube-api";
+import type { Disposer } from "@love2hina-net/k8slens.utilities";
+import { waitUntilDefined, includes, rejectPromiseBy, object } from "@love2hina-net/k8slens.utilities";
+import type { KubeJsonApiDataFor, KubeObject } from "@love2hina-net/k8slens.kube-object";
+import { KubeStatus } from "@love2hina-net/k8slens.kube-object";
+import type { IKubeWatchEvent, KubeApiQueryParams, KubeApi, KubeApiWatchCallback } from "@love2hina-net/k8slens.kube-api";
 import { ItemStore } from "../item.store";
-import { parseKubeApi } from "@k8slens/kube-api";
-import type { RequestInit } from "@k8slens/node-fetch";
+import { parseKubeApi } from "@love2hina-net/k8slens.kube-api";
+import type { RequestInit } from "@love2hina-net/k8slens.node-fetch";
 import type { Patch } from "rfc6902";
-import type { Logger } from "@k8slens/logger";
+import type { Logger } from "@love2hina-net/k8slens.logger";
 import assert from "assert";
 import type { PartialDeep } from "type-fest";
 import type { ClusterContext } from "../../renderer/cluster-frame-context/cluster-frame-context";

@@ -22,16 +22,16 @@ import electronUpdaterIsActiveInjectable from "./electron-app/features/electron-
 import setUpdateOnQuitInjectable from "./electron-app/features/set-update-on-quit.injectable";
 import waitUntilBundledExtensionsAreLoadedInjectable from "./start-main-application/lens-window/application-window/wait-until-bundled-extensions-are-loaded.injectable";
 import initializeClusterManagerInjectable from "./cluster/initialize-manager.injectable";
-import type { GlobalOverride } from "@k8slens/test-utils";
+import type { GlobalOverride } from "@love2hina-net/k8slens.test-utils";
 import { getOverrideFsWithFakes } from "../test-utils/override-fs-with-fakes";
-import { setLegacyGlobalDiForExtensionApi } from "@k8slens/legacy-global-di";
+import { setLegacyGlobalDiForExtensionApi } from "@love2hina-net/k8slens.legacy-global-di";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
-import { registerFeature } from "@k8slens/feature-core";
-import { messagingFeature, testUtils as messagingTestUtils } from "@k8slens/messaging";
-import { loggerFeature } from "@k8slens/logger";
-import { randomFeature } from "@k8slens/random";
-import { kubeApiSpecificsFeature } from "@k8slens/kube-api-specifics";
-import { notificationsFeature } from "@k8slens/notifications";
+import { registerFeature } from "@love2hina-net/k8slens.feature-core";
+import { messagingFeature, testUtils as messagingTestUtils } from "@love2hina-net/k8slens.messaging";
+import { loggerFeature } from "@love2hina-net/k8slens.logger";
+import { randomFeature } from "@love2hina-net/k8slens.random";
+import { kubeApiSpecificsFeature } from "@love2hina-net/k8slens.kube-api-specifics";
+import { notificationsFeature } from "@love2hina-net/k8slens.notifications";
 
 export function getDiForUnitTesting() {
   const environment = "main";

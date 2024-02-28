@@ -3,12 +3,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { onLoadOfApplicationInjectionToken } from "@k8slens/application";
+import { onLoadOfApplicationInjectionToken } from "@love2hina-net/k8slens.application";
 import weblinkVerificationStartableStoppableInjectable from "./weblink-verification.injectable";
 import catalogEntityRegistryInjectable from "../../../main/catalog/entity-registry.injectable";
 import weblinkVerificationsInjectable from "./weblink-verifications.injectable";
 import { computed } from "mobx";
-import { iter } from "@k8slens/utilities";
+import { iter } from "@love2hina-net/k8slens.utilities";
 
 const setupSyncingOfWeblinksInjectable = getInjectable({
   id: "setup-syncing-of-weblinks",

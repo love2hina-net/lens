@@ -9,12 +9,12 @@ import { merge } from "lodash";
 import { stringify } from "querystring";
 import type { Patch } from "rfc6902";
 import type { PartialDeep, ValueOf } from "type-fest";
-import { EventEmitter } from "@k8slens/event-emitter";
-import type { Logger } from "@k8slens/logger";
-import type Fetch from "@k8slens/node-fetch";
-import type { RequestInit, Response } from "@k8slens/node-fetch";
-import type { Defaulted } from "@k8slens/utilities";
-import { isObject, isString, json } from "@k8slens/utilities";
+import { EventEmitter } from "@love2hina-net/k8slens.event-emitter";
+import type { Logger } from "@love2hina-net/k8slens.logger";
+import type Fetch from "@love2hina-net/k8slens.node-fetch";
+import type { RequestInit, Response } from "@love2hina-net/k8slens.node-fetch";
+import type { Defaulted } from "@love2hina-net/k8slens.utilities";
+import { isObject, isString, json } from "@love2hina-net/k8slens.utilities";
 
 export interface JsonApiData {}
 

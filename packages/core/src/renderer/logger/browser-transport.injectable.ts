@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import BrowserConsole from "winston-transport-browserconsole";
-import { loggerTransportInjectionToken } from "@k8slens/logger";
+import { loggerTransportInjectionToken } from "@love2hina-net/k8slens.logger";
 
 const browserLoggerTransportInjectable = getInjectable({
   id: "browser-logger-transport",

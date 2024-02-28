@@ -12,9 +12,9 @@ import { SiblingsInTabLayout } from "../layout/siblings-in-tab-layout";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import type { IngressClassStore } from "./ingress-class-store";
 import ingressClassStoreInjectable from "./ingress-class-store.injectable";
-import type { IngressClass } from "@k8slens/kube-object";
-import { cssNames } from "@k8slens/utilities";
-import { Icon } from "@k8slens/icon";
+import type { IngressClass } from "@love2hina-net/k8slens.kube-object";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
+import { Icon } from "@love2hina-net/k8slens.icon";
 
 enum columnId {
   name = "name",

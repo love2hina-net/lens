@@ -5,7 +5,7 @@
 
 import { getInjectable } from "@ogre-tools/injectable";
 import clusterFrameContextForNamespacedResourcesInjectable from "../../cluster-frame-context/for-namespaced-resources.injectable";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 import podStoreInjectable from "./store.injectable";
 
 const loadPodsFromAllNamespacesInjectable = getInjectable({

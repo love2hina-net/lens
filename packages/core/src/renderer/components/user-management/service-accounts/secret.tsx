@@ -8,10 +8,10 @@ import "./secret.scss";
 import moment from "moment";
 import React from "react";
 
-import type { Secret } from "@k8slens/kube-object";
-import type { StrictReactNode } from "@k8slens/utilities";
-import { prevDefault } from "@k8slens/utilities";
-import { Icon } from "@k8slens/icon";
+import type { Secret } from "@love2hina-net/k8slens.kube-object";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { prevDefault } from "@love2hina-net/k8slens.utilities";
+import { Icon } from "@love2hina-net/k8slens.icon";
 
 export interface ServiceAccountsSecretProps {
   secret: Secret | string;

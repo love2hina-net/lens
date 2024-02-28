@@ -6,7 +6,7 @@ import { getInjectable, instantiationDecoratorToken, createInstantiationTargetDe
 import assert from "assert";
 import emitTelemetryInjectable from "./emit-telemetry.injectable";
 import telemetryWhiteListForParameterlessFunctionsInjectable from "./telemetry-white-list-for-parameterless-functions.injectable";
-import { isFunction } from "@k8slens/utilities";
+import { isFunction } from "@love2hina-net/k8slens.utilities";
 
 const basicTelemetryDecoratorInjectable = getInjectable({
   id: "basic-telemetry-decorator",

@@ -12,7 +12,7 @@ import { Badge } from "../../badge";
 import type { SelectOption } from "../../select";
 import { Select } from "../../select";
 import type { LogTabViewModel } from "./logs-view-model";
-import type { Container, Pod } from "@k8slens/kube-object";
+import type { Container, Pod } from "@love2hina-net/k8slens.kube-object";
 import type { SingleValue } from "react-select";
 
 export interface LogResourceSelectorProps {

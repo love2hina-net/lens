@@ -4,10 +4,10 @@
  */
 
 import { kebabCase } from "lodash";
-import { getGlobalOverride } from "@k8slens/test-utils";
+import { getGlobalOverride } from "@love2hina-net/k8slens.test-utils";
 import electronAppInjectable from "./electron-app.injectable";
 import EventEmitter from "events";
-import { getOrInsert } from "@k8slens/utilities";
+import { getOrInsert } from "@love2hina-net/k8slens.utilities";
 
 export default getGlobalOverride(electronAppInjectable, () => {
   const commandLineArgs: string[] = [];

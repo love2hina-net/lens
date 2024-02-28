@@ -6,9 +6,9 @@
 import styles from "./tree-view.module.scss";
 import type { MouseEventHandler } from "react";
 import React, { useState } from "react";
-import type { StrictReactNode } from "@k8slens/utilities";
-import { cssNames } from "@k8slens/utilities";
-import { Icon } from "@k8slens/icon";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
+import { Icon } from "@love2hina-net/k8slens.icon";
 
 export interface TreeViewClasses {
   root?: string;

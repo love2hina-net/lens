@@ -14,9 +14,9 @@ import type { EventStore } from "../events/store";
 import type { PodStore } from "./store";
 import eventStoreInjectable from "../events/store.injectable";
 import podStoreInjectable from "./store.injectable";
-import type { SpecificKubeListLayoutColumn } from "@k8slens/list-layout";
-import { podListLayoutColumnInjectionToken } from "@k8slens/list-layout";
-import type { Pod } from "@k8slens/kube-object";
+import type { SpecificKubeListLayoutColumn } from "@love2hina-net/k8slens.list-layout";
+import { podListLayoutColumnInjectionToken } from "@love2hina-net/k8slens.list-layout";
+import type { Pod } from "@love2hina-net/k8slens.kube-object";
 
 interface Dependencies {
   eventStore: EventStore;

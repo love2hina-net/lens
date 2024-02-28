@@ -2,9 +2,9 @@
  * Copyright (c) OpenLens Authors. All rights reserved.
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
-import { beforeApplicationIsLoadingInjectionToken } from "@k8slens/application";
+import { beforeApplicationIsLoadingInjectionToken } from "@love2hina-net/k8slens.application";
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import appNameInjectable from "../../common/vars/app-name.injectable";
 import { buildVersionInitializable } from "../../features/vars/build-version/common/token";
 import { buildVersionInitializationInjectable } from "../../features/vars/build-version/main/init.injectable";

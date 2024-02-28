@@ -7,11 +7,11 @@ import { getInjectable } from "@ogre-tools/injectable";
 import getBasenameOfPathInjectable from "../../../common/path/get-basename.injectable";
 import spawnInjectable from "../../../main/child-process/spawn.injectable";
 import randomUUIDInjectable from "../../../main/crypto/random-uuid.injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import processExecPathInjectable from "./execPath.injectable";
 import processEnvInjectable from "./env.injectable";
-import { object } from "@k8slens/utilities";
-import type { AsyncResult } from "@k8slens/utilities";
+import { object } from "@love2hina-net/k8slens.utilities";
+import type { AsyncResult } from "@love2hina-net/k8slens.utilities";
 
 export interface UnixShellEnvOptions {
   signal: AbortSignal;

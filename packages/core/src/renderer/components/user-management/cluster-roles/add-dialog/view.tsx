@@ -20,8 +20,8 @@ import closeAddClusterRoleDialogInjectable from "./close.injectable";
 import clusterRoleStoreInjectable from "../store.injectable";
 import showDetailsInjectable from "../../../kube-detail-params/show-details.injectable";
 import addClusterRoleDialogStateInjectable from "./state.injectable";
-import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
-import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import type { ShowCheckedErrorNotification } from "@love2hina-net/k8slens.notifications";
+import { showCheckedErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 
 export interface AddClusterRoleDialogProps extends Partial<DialogProps> {
 }

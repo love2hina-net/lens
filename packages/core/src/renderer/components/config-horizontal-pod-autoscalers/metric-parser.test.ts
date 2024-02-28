@@ -5,7 +5,7 @@
 import type { DiContainer } from "@ogre-tools/injectable";
 import getHorizontalPodAutoscalerMetrics from "./get-metrics.injectable";
 import { getDiForUnitTesting } from "../../getDiForUnitTesting";
-import { HorizontalPodAutoscaler } from "@k8slens/kube-object";
+import { HorizontalPodAutoscaler } from "@love2hina-net/k8slens.kube-object";
 
 const hpaV2 = {
   apiVersion: "autoscaling/v2",

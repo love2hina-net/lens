@@ -4,8 +4,8 @@
  */
 import type { DiContainer } from "@ogre-tools/injectable";
 import { MESSAGE } from "triple-beam";
-import type { SendMessageToChannel } from "@k8slens/messaging";
-import { sendMessageToChannelInjectionToken } from "@k8slens/messaging";
+import type { SendMessageToChannel } from "@love2hina-net/k8slens.messaging";
+import { sendMessageToChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 import rendererLogFileIdInjectable from "./renderer-log-file-id.injectable";
 import ipcLogTransportInjectable from "./ipc-transport.injectable";
 import { getDiForUnitTesting } from "../../../renderer/getDiForUnitTesting";

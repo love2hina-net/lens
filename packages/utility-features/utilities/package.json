@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/utilities",
+  "name": "@love2hina-net/k8slens.utilities",
   "description": "A collection of useful types",
   "version": "1.0.0",
   "type": "commonjs",
@@ -41,7 +41,7 @@
     "typed-regex": "^0.0.8"
   },
   "devDependencies": {
-    "@k8slens/webpack": "^6.5.0",
+    "@love2hina-net/k8slens.webpack": "^6.5.0",
     "@types/crypto-js": "^4.1.1",
     "@types/lodash": "^4.14.191",
     "@types/react": "^17.0.2",

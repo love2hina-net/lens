@@ -3,8 +3,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { TableCellProps } from "@k8slens/list-layout";
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { TableCellProps } from "@love2hina-net/k8slens.list-layout";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 import type { CatalogEntity } from "../../../common/catalog";
 
 /**

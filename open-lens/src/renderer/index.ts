@@ -1,12 +1,12 @@
-import "@k8slens/core/styles";
-import "@k8slens/button/styles";
-import "@k8slens/error-boundary/styles";
-import "@k8slens/tooltip/styles";
-import "@k8slens/resizing-anchor/styles";
-import "@k8slens/icon/styles";
-import "@k8slens/animate/styles";
-import "@k8slens/notifications/styles";
-import "@k8slens/spinner/styles";
+import "@love2hina-net/k8slens.core/styles";
+import "@love2hina-net/k8slens.button/styles";
+import "@love2hina-net/k8slens.error-boundary/styles";
+import "@love2hina-net/k8slens.tooltip/styles";
+import "@love2hina-net/k8slens.resizing-anchor/styles";
+import "@love2hina-net/k8slens.icon/styles";
+import "@love2hina-net/k8slens.animate/styles";
+import "@love2hina-net/k8slens.notifications/styles";
+import "@love2hina-net/k8slens.spinner/styles";
 
 import { runInAction } from "mobx";
 import {
@@ -14,26 +14,26 @@ import {
   commonExtensionApi as Common,
   registerLensCore,
   metricsFeature,
-} from "@k8slens/core/renderer";
+} from "@love2hina-net/k8slens.core/renderer";
 import { autoRegister } from "@ogre-tools/injectable-extension-for-auto-registration";
-import { registerFeature } from "@k8slens/feature-core";
+import { registerFeature } from "@love2hina-net/k8slens.feature-core";
 import {
   applicationFeature,
   startApplicationInjectionToken
-} from "@k8slens/application";
+} from "@love2hina-net/k8slens.application";
 import { createContainer } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
 import { registerInjectableReact } from "@ogre-tools/injectable-react";
-import { messagingFeatureForRenderer } from "@k8slens/messaging-for-renderer";
-import { keyboardShortcutsFeature } from "@k8slens/keyboard-shortcuts";
-import { reactApplicationFeature } from "@k8slens/react-application";
-import { routingFeature } from "@k8slens/routing";
-import { loggerFeature } from "@k8slens/logger";
-import { animateFeature } from "@k8slens/animate";
-import { clusterSidebarFeature } from "@k8slens/cluster-sidebar";
-import { randomFeature } from "@k8slens/random";
-import { kubeApiSpecificsFeature } from "@k8slens/kube-api-specifics";
-import { notificationsFeature } from "@k8slens/notifications";
+import { messagingFeatureForRenderer } from "@love2hina-net/k8slens.messaging-for-renderer";
+import { keyboardShortcutsFeature } from "@love2hina-net/k8slens.keyboard-shortcuts";
+import { reactApplicationFeature } from "@love2hina-net/k8slens.react-application";
+import { routingFeature } from "@love2hina-net/k8slens.routing";
+import { loggerFeature } from "@love2hina-net/k8slens.logger";
+import { animateFeature } from "@love2hina-net/k8slens.animate";
+import { clusterSidebarFeature } from "@love2hina-net/k8slens.cluster-sidebar";
+import { randomFeature } from "@love2hina-net/k8slens.random";
+import { kubeApiSpecificsFeature } from "@love2hina-net/k8slens.kube-api-specifics";
+import { notificationsFeature } from "@love2hina-net/k8slens.notifications";
 
 const environment = "renderer";
 
@@ -87,7 +87,7 @@ export {
   ReactRouterDom,
   Mobx,
   MobxReact,
-} from "@k8slens/core/renderer";
+} from "@love2hina-net/k8slens.core/renderer";
 
 export const LensExtensions = {
   Renderer,

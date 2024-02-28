@@ -9,12 +9,12 @@ import React from "react";
 import { createPortal } from "react-dom";
 import { disposeOnUnmount, observer } from "mobx-react";
 import { reaction } from "mobx";
-import { Animate, requestAnimationFrameInjectable } from "@k8slens/animate";
-import type { StrictReactNode } from "@k8slens/utilities";
-import { cssNames, noop, stopPropagation } from "@k8slens/utilities";
+import { Animate, requestAnimationFrameInjectable } from "@love2hina-net/k8slens.animate";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames, noop, stopPropagation } from "@love2hina-net/k8slens.utilities";
 import type { ObservableHistory } from "mobx-observable-history";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { observableHistoryInjectionToken } from "@k8slens/routing";
+import { observableHistoryInjectionToken } from "@love2hina-net/k8slens.routing";
 
 // todo: refactor + handle animation-end in props.onClose()?
 

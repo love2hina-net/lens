@@ -5,8 +5,8 @@
 
 import { withInjectables } from "@ogre-tools/injectable-react";
 import React from "react";
-import type { ConfigMapApi } from "@k8slens/kube-api";
-import { configMapApiInjectable } from "@k8slens/kube-api-specifics";
+import type { ConfigMapApi } from "@love2hina-net/k8slens.kube-api";
+import { configMapApiInjectable } from "@love2hina-net/k8slens.kube-api-specifics";
 import type { PodVolumeVariantSpecificProps } from "../variant-helpers";
 import { LocalRef } from "../variant-helpers";
 

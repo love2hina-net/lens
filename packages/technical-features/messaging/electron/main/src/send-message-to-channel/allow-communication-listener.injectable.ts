@@ -1,4 +1,4 @@
-import { getMessageChannel, getMessageChannelListenerInjectable } from "@k8slens/messaging";
+import { getMessageChannel, getMessageChannelListenerInjectable } from "@love2hina-net/k8slens.messaging";
 import frameIdsInjectable from "./frameIds.injectable";
 
 const frameCommunicationAdminChannel = getMessageChannel<undefined>("frame-communication-admin-channel");

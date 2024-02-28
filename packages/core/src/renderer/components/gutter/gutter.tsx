@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import React from "react";
-import { cssNames } from "@k8slens/utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 import styles from "./gutter.module.scss";
 
 interface GutterProps {

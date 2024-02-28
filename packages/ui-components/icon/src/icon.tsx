@@ -8,8 +8,8 @@ import "./icon.scss";
 import React, { createRef } from "react";
 import { NavLink } from "react-router-dom";
 import type { LocationDescriptor } from "history";
-import { cssNames } from "@k8slens/utilities";
-import { withTooltip } from "@k8slens/tooltip";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
+import { withTooltip } from "@love2hina-net/k8slens.tooltip";
 import isNumber from "lodash/isNumber";
 import Configuration from "../assets/configuration.svg";
 import Crane from "../assets/crane.svg";
@@ -33,10 +33,10 @@ import User from "../assets/user.svg";
 import Users from "../assets/users.svg";
 import Wheel from "../assets/wheel.svg";
 import Workloads from "../assets/workloads.svg";
-import type { Logger } from "@k8slens/logger";
+import type { Logger } from "@love2hina-net/k8slens.logger";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@k8slens/logger";
-import type { StrictReactNode } from "@k8slens/utilities";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 
 const hrefValidation = /https?:\/\//;
 

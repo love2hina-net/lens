@@ -4,17 +4,17 @@ import {
   mainExtensionApi as Main,
   commonExtensionApi as Common,
   registerLensCore,
-} from "@k8slens/core/main";
+} from "@love2hina-net/k8slens.core/main";
 import { createContainer } from "@ogre-tools/injectable";
 import { registerMobX } from "@ogre-tools/injectable-extension-for-mobx";
-import { registerFeature } from "@k8slens/feature-core";
-import { applicationFeature, startApplicationInjectionToken } from '@k8slens/application'
-import { applicationFeatureForElectronMain } from '@k8slens/application-for-electron-main'
-import { messagingFeatureForMain } from "@k8slens/messaging-for-main";
-import { loggerFeature } from "@k8slens/logger";
-import { randomFeature } from "@k8slens/random";
-import { kubeApiSpecificsFeature } from "@k8slens/kube-api-specifics";
-import { prometheusFeature } from "@k8slens/prometheus";
+import { registerFeature } from "@love2hina-net/k8slens.feature-core";
+import { applicationFeature, startApplicationInjectionToken } from '@love2hina-net/k8slens.application'
+import { applicationFeatureForElectronMain } from '@love2hina-net/k8slens.application-for-electron-main'
+import { messagingFeatureForMain } from "@love2hina-net/k8slens.messaging-for-main";
+import { loggerFeature } from "@love2hina-net/k8slens.logger";
+import { randomFeature } from "@love2hina-net/k8slens.random";
+import { kubeApiSpecificsFeature } from "@love2hina-net/k8slens.kube-api-specifics";
+import { prometheusFeature } from "@love2hina-net/k8slens.prometheus";
 
 const environment = "main";
 
@@ -63,7 +63,7 @@ startApplication().catch((error) => {
 export {
   Mobx,
   Pty,
-} from "@k8slens/core/main";
+} from "@love2hina-net/k8slens.core/main";
 
 export const LensExtensions = {
   Main,

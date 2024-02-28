@@ -3,12 +3,12 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import type { KubeObjectMetadata, KubeObjectScope, KubeJsonApiData } from "@k8slens/kube-object";
-import { KubeObject } from "@k8slens/kube-object";
-import type { AsyncResult } from "@k8slens/utilities";
+import type { KubeObjectMetadata, KubeObjectScope, KubeJsonApiData } from "@love2hina-net/k8slens.kube-object";
+import { KubeObject } from "@love2hina-net/k8slens.kube-object";
+import type { AsyncResult } from "@love2hina-net/k8slens.utilities";
 import { getErrorMessage } from "../../../../../common/utils/get-error-message";
 import type { Writable } from "type-fest";
-import { parseKubeApi } from "@k8slens/kube-api";
+import { parseKubeApi } from "@love2hina-net/k8slens.kube-api";
 import apiKubeGetInjectable from "../../../../k8s/api-kube-get.injectable";
 
 export type RequestKubeResource = (selfLink: string) => AsyncResult<KubeObject | undefined>;

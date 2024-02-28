@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import { computed } from "mobx";
-import { clusterFrameChildComponentInjectionToken } from "@k8slens/react-application";
+import { clusterFrameChildComponentInjectionToken } from "@love2hina-net/k8slens.react-application";
 import { KubeConfigDialog } from "./kubeconfig-dialog";
 
 const kubeconfigDialogClusterFrameChildComponentInjectable = getInjectable({

@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { Cluster } from "@k8slens/kube-object";
+import { Cluster } from "@love2hina-net/k8slens.kube-object";
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 import { KubeApi } from "../kube-api";
 

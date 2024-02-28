@@ -1,5 +1,5 @@
 import { getInjectable } from "@ogre-tools/injectable";
-import { afterApplicationIsLoadedInjectionToken } from "@k8slens/application";
+import { afterApplicationIsLoadedInjectionToken } from "@love2hina-net/k8slens.application";
 import renderInjectable from "./render.injectable";
 import { ReactApplication } from "../react-application/react-application";
 import React from "react";

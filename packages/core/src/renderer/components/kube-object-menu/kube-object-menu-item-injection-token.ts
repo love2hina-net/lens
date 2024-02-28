@@ -5,7 +5,7 @@
 import { getInjectionToken } from "@ogre-tools/injectable";
 import type { IComputedValue } from "mobx";
 import type { KubeObjectMenuProps } from "./kube-object-menu";
-import type { KubeObject } from "@k8slens/kube-object";
+import type { KubeObject } from "@love2hina-net/k8slens.kube-object";
 import type React from "react";
 
 export type KubeObjectMenuItemComponent = React.ElementType<

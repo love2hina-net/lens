@@ -6,7 +6,7 @@
 import React, { useState } from "react";
 import type { TooltipProps } from "./tooltip";
 import { Tooltip } from "./tooltip";
-import { isReactNode, StrictReactNode } from "@k8slens/utilities";
+import { isReactNode, StrictReactNode } from "@love2hina-net/k8slens.utilities";
 import uniqueId from "lodash/uniqueId";
 
 export interface TooltipDecoratorProps {

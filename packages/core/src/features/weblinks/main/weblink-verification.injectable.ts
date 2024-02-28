@@ -2,9 +2,9 @@
  * Copyright (c) OpenLens Authors. All rights reserved.
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
-import { getStartableStoppable } from "@k8slens/startable-stoppable";
-import type { Disposer } from "@k8slens/utilities";
-import { delay, disposer } from "@k8slens/utilities";
+import { getStartableStoppable } from "@love2hina-net/k8slens.startable-stoppable";
+import type { Disposer } from "@love2hina-net/k8slens.utilities";
+import { delay, disposer } from "@love2hina-net/k8slens.utilities";
 import { getInjectable } from "@ogre-tools/injectable";
 import { random } from "lodash";
 import { reaction, runInAction } from "mobx";

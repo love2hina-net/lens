@@ -3,9 +3,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import React, { useState } from "react";
-import type { EnvVarKeySelector } from "@k8slens/kube-object";
-import { Icon } from "@k8slens/icon";
-import { base64, cssNames, isObject } from "@k8slens/utilities";
+import type { EnvVarKeySelector } from "@love2hina-net/k8slens.kube-object";
+import { Icon } from "@love2hina-net/k8slens.icon";
+import { base64, cssNames, isObject } from "@love2hina-net/k8slens.utilities";
 import type { SecretStore } from "../config-secrets/store";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import secretStoreInjectable from "../config-secrets/store.injectable";

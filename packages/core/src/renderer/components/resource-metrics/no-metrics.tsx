@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import { Icon } from "@k8slens/icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 
 export function NoMetrics() {
   return (

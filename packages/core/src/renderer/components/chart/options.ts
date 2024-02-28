@@ -4,7 +4,7 @@
  */
 
 import type { ChartOptions, ChartPoint } from "chart.js";
-import { bytesToUnits, isDefined } from "@k8slens/utilities";
+import { bytesToUnits, isDefined } from "@love2hina-net/k8slens.utilities";
 
 export type MetricsTab = "CPU" | "Memory" | "Disk" | "Pods" | "Network" | "Filesystem" | "Duration";
 

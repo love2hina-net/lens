@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 import type { DiContainer } from "@ogre-tools/injectable";
 import { computed } from "mobx";
 import type { LensRendererExtension } from "../../../../extensions/lens-renderer-extension";

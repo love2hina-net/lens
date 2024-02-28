@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getGlobalOverride } from "@k8slens/test-utils";
+import { getGlobalOverride } from "@love2hina-net/k8slens.test-utils";
 import randomUUIDInjectable from "./random-uuid.injectable";
 
 export default getGlobalOverride(randomUUIDInjectable, () => () => {

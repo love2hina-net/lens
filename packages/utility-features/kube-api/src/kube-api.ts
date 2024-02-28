@@ -16,27 +16,27 @@ import type {
   KubeObject,
   KubeObjectScope,
   Scale,
-} from "@k8slens/kube-object";
+} from "@love2hina-net/k8slens.kube-object";
 import {
   isJsonApiData,
   isJsonApiDataList,
   isPartialJsonApiData,
   KubeStatus,
   isKubeStatusData,
-} from "@k8slens/kube-object";
+} from "@love2hina-net/k8slens.kube-object";
 import byline from "byline";
 import type { IKubeWatchEvent } from "./kube-watch-event";
 import type { KubeJsonApi } from "./kube-json-api";
-import type { Disposer } from "@k8slens/utilities";
-import { isDefined, noop, WrappedAbortController } from "@k8slens/utilities";
-import type { RequestInit, Response } from "@k8slens/node-fetch";
+import type { Disposer } from "@love2hina-net/k8slens.utilities";
+import { isDefined, noop, WrappedAbortController } from "@love2hina-net/k8slens.utilities";
+import type { RequestInit, Response } from "@love2hina-net/k8slens.node-fetch";
 import type { Patch } from "rfc6902";
 import assert from "assert";
 import type { PartialDeep } from "type-fest";
-import type { LogFunction } from "@k8slens/logger";
+import type { LogFunction } from "@love2hina-net/k8slens.logger";
 import { matches } from "lodash/fp";
 import { makeObservable, observable } from "mobx";
-import type { ScaleCreateOptions } from "@k8slens/kube-object/src/types/scale";
+import type { ScaleCreateOptions } from "@love2hina-net/k8slens.kube-object/src/types/scale";
 
 /**
  * The options used for creating a `KubeApi`

@@ -1,3 +1,3 @@
 {
-  "extends": "@k8slens/typescript/config/base.json"
+  "extends": "@love2hina-net/k8slens.typescript/config/base.json"
 }

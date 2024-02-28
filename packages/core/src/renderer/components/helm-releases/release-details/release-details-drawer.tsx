@@ -8,7 +8,7 @@ import "./release-details.scss";
 import React from "react";
 
 import { Drawer } from "../../drawer";
-import { cssNames } from "@k8slens/utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 import { observer } from "mobx-react";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import type { TargetHelmRelease } from "./target-helm-release.injectable";

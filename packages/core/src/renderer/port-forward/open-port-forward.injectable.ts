@@ -3,9 +3,9 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import openLinkInBrowserInjectable from "../../common/utils/open-link-in-browser.injectable";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 import type { ForwardedPort } from "./port-forward-item";
 import { portForwardAddress } from "./port-forward-utils";
 

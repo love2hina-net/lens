@@ -1,6 +1,6 @@
 import { getInjectable } from "@ogre-tools/injectable";
-import type { RequestFromChannel } from "@k8slens/messaging";
-import { requestFromChannelInjectionToken } from "@k8slens/messaging";
+import type { RequestFromChannel } from "@love2hina-net/k8slens.messaging";
+import { requestFromChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 import invokeIpcInjectable from "./invoke-ipc.injectable";
 
 const requestFromChannelInjectable = getInjectable({

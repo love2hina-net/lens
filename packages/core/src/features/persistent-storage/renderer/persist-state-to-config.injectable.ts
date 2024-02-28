@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { noop } from "@k8slens/utilities";
+import { noop } from "@love2hina-net/k8slens.utilities";
 import { persistStateToConfigInjectionToken } from "../common/save-to-file";
 
 const persistStateToConfigInjectable = getInjectable({

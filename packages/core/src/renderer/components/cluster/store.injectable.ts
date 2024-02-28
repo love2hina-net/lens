@@ -6,10 +6,10 @@ import { getInjectable } from "@ogre-tools/injectable";
 
 import { ClusterStore } from "./store";
 import { kubeObjectStoreInjectionToken } from "../../../common/k8s-api/api-manager/kube-object-store-token";
-import { clusterApiInjectable, storesAndApisCanBeCreatedInjectionToken } from "@k8slens/kube-api-specifics";
+import { clusterApiInjectable, storesAndApisCanBeCreatedInjectionToken } from "@love2hina-net/k8slens.kube-api-specifics";
 import assert from "assert";
 import clusterFrameContextForNamespacedResourcesInjectable from "../../cluster-frame-context/for-namespaced-resources.injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 
 const clusterStoreInjectable = getInjectable({
   id: "cluster-store",

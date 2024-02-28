@@ -6,7 +6,7 @@
 import "./runtime-classes-details-tolerations.scss";
 import React from "react";
 import { DrawerParamToggler, DrawerItem } from "../drawer";
-import type { Toleration, KubeObject } from "@k8slens/kube-object";
+import type { Toleration, KubeObject } from "@love2hina-net/k8slens.kube-object";
 import { RuntimeClassTolerations } from "./runtime-classes-tolerations";
 
 export interface KubeObjectWithTolerations extends KubeObject {

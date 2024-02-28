@@ -5,7 +5,7 @@
 
 import "./dialog.scss";
 
-import type { StatefulSet } from "@k8slens/kube-object";
+import type { StatefulSet } from "@love2hina-net/k8slens.kube-object";
 import React, { Component } from "react";
 import type { IObservableValue } from "mobx";
 import { computed, makeObservable, observable } from "mobx";
@@ -13,15 +13,15 @@ import { observer } from "mobx-react";
 import type { DialogProps } from "../../dialog";
 import { Dialog } from "../../dialog";
 import { Wizard, WizardStep } from "../../wizard";
-import { Icon } from "@k8slens/icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import { Slider } from "../../slider";
-import { cssNames } from "@k8slens/utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { statefulSetApiInjectable } from "@k8slens/kube-api-specifics";
+import { statefulSetApiInjectable } from "@love2hina-net/k8slens.kube-api-specifics";
 import statefulSetDialogStateInjectable from "./dialog-state.injectable";
-import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
-import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
-import type { StatefulSetApi } from "@k8slens/kube-api";
+import type { ShowCheckedErrorNotification } from "@love2hina-net/k8slens.notifications";
+import { showCheckedErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
+import type { StatefulSetApi } from "@love2hina-net/k8slens.kube-api";
 
 export interface StatefulSetScaleDialogProps extends Partial<DialogProps> {
 }

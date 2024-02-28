@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { getRequestChannelListenerInjectable } from "@k8slens/messaging";
+import { getRequestChannelListenerInjectable } from "@love2hina-net/k8slens.messaging";
 import { enabledExtensionsPersistentStorageVersionChannel, enabledExtensionsPersistentStorageVersionInitializable } from "../common/storage-version";
 
 const enabledExtensionsPersistentStorageVersionChannelHandler = getRequestChannelListenerInjectable({

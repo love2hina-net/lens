@@ -3,8 +3,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
-import { object } from "@k8slens/utilities";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
+import { object } from "@love2hina-net/k8slens.utilities";
 import type { LensTheme } from "./lens-theme";
 import resetThemeInjectable from "../../features/user-preferences/common/reset-theme.injectable";
 

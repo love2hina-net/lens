@@ -6,7 +6,7 @@
 import moment from "moment";
 import type { DerivedKubeApiOptions, KubeApiDependencies, NamespacedResourceDescriptor } from "../kube-api";
 import { KubeApi } from "../kube-api";
-import { DaemonSet } from "@k8slens/kube-object";
+import { DaemonSet } from "@love2hina-net/k8slens.kube-object";
 
 export class DaemonSetApi extends KubeApi<DaemonSet> {
   constructor(deps: KubeApiDependencies, opts?: DerivedKubeApiOptions) {

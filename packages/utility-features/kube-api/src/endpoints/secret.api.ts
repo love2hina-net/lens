@@ -5,8 +5,8 @@
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 import { KubeApi } from "../kube-api";
-import { Secret } from "@k8slens/kube-object";
-import type { SecretData } from "@k8slens/kube-object";
+import { Secret } from "@love2hina-net/k8slens.kube-object";
+import type { SecretData } from "@love2hina-net/k8slens.kube-object";
 
 export class SecretApi extends KubeApi<Secret, SecretData> {
   constructor(deps: KubeApiDependencies, options: DerivedKubeApiOptions = {}) {

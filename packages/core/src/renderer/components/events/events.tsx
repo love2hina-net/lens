@@ -13,14 +13,14 @@ import { TabLayout } from "../layout/tab-layout-2";
 import type { EventStore } from "./store";
 import type { KubeObjectListLayoutProps } from "../kube-object-list-layout";
 import { KubeObjectListLayout } from "../kube-object-list-layout";
-import type { KubeEvent, KubeEventData } from "@k8slens/kube-object";
+import type { KubeEvent, KubeEventData } from "@love2hina-net/k8slens.kube-object";
 import type { TableSortParams, TableSortCallbacks } from "../table";
 import type { HeaderCustomizer } from "../item-object-list";
-import { Tooltip } from "@k8slens/tooltip";
+import { Tooltip } from "@love2hina-net/k8slens.tooltip";
 import { Link } from "react-router-dom";
-import type { IClassName } from "@k8slens/utilities";
-import { cssNames, stopPropagation } from "@k8slens/utilities";
-import { Icon } from "@k8slens/icon";
+import type { IClassName } from "@love2hina-net/k8slens.utilities";
+import { cssNames, stopPropagation } from "@love2hina-net/k8slens.utilities";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import navigateToEventsInjectable  from "../../../common/front-end-routing/routes/cluster/events/navigate-to-events.injectable";
@@ -31,7 +31,7 @@ import eventStoreInjectable from "./store.injectable";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
 import { NamespaceSelectBadge } from "../namespaces/namespace-select-badge";
-import type { KubeEventApi } from "@k8slens/kube-api";
+import type { KubeEventApi } from "@love2hina-net/k8slens.kube-api";
 
 enum columnId {
   message = "message",

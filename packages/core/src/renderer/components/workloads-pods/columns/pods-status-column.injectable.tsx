@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import { kebabCase } from "lodash";
-import { podListLayoutColumnInjectionToken } from "@k8slens/list-layout";
+import { podListLayoutColumnInjectionToken } from "@love2hina-net/k8slens.list-layout";
 
 const columnId = "status";
 

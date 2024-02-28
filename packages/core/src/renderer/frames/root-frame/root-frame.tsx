@@ -7,8 +7,8 @@ import React from "react";
 import { Observer } from "mobx-react";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import broadcastThatRootFrameIsRenderedInjectable from "./broadcast-that-root-frame-is-rendered.injectable";
-import type { RootFrameChildComponent } from "@k8slens/react-application";
-import { rootFrameChildComponentInjectionToken } from "@k8slens/react-application";
+import type { RootFrameChildComponent } from "@love2hina-net/k8slens.react-application";
+import { rootFrameChildComponentInjectionToken } from "@love2hina-net/k8slens.react-application";
 
 interface Dependencies {
   broadcastThatRootFrameIsRendered: () => void;

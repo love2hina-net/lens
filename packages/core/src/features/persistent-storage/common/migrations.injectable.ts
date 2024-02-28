@@ -4,8 +4,8 @@
  */
 import type { InjectionToken } from "@ogre-tools/injectable";
 import { lifecycleEnum, getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
-import { getOrInsert, iter, object } from "@k8slens/utilities";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
+import { getOrInsert, iter, object } from "@love2hina-net/k8slens.utilities";
 
 export type AllowedSetValue<T> = T extends (...args: any[]) => any
   ? never

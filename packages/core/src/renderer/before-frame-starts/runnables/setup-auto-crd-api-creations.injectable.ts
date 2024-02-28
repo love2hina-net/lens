@@ -5,14 +5,14 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import { reaction } from "mobx";
 import { customResourceDefinitionApiInjectionToken } from "../../../common/k8s-api/api-manager/crd-api-token";
-import type { CustomResourceDefinition } from "@k8slens/kube-object";
-import { KubeApi } from "@k8slens/kube-api";
-import { KubeObject } from "@k8slens/kube-object";
-import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@k8slens/logger";
+import type { CustomResourceDefinition } from "@love2hina-net/k8slens.kube-object";
+import { KubeApi } from "@love2hina-net/k8slens.kube-api";
+import { KubeObject } from "@love2hina-net/k8slens.kube-object";
+import { logErrorInjectionToken, logInfoInjectionToken, logWarningInjectionToken } from "@love2hina-net/k8slens.logger";
 import { injectableDifferencingRegistratorWith } from "../../../common/utils/registrator-helper";
 import customResourceDefinitionStoreInjectable from "../../components/custom-resource-definitions/store.injectable";
 import { beforeClusterFrameStartsSecondInjectionToken } from "../tokens";
-import { maybeKubeApiInjectable } from "@k8slens/kube-api-specifics";
+import { maybeKubeApiInjectable } from "@love2hina-net/k8slens.kube-api-specifics";
 
 const setupAutoCrdApiCreationsInjectable = getInjectable({
   id: "setup-auto-crd-api-creations",

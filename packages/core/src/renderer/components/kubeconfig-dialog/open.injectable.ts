@@ -3,10 +3,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
-import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
+import { showCheckedErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 import kubeconfigDialogStateInjectable from "./state.injectable";
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 
 export interface OpenKubeconfigDialogArgs {
   title?: StrictReactNode;

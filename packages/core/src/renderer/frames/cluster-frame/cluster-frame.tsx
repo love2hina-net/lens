@@ -4,15 +4,15 @@
  */
 import React, { useEffect } from "react";
 import { Observer, observer } from "mobx-react";
-import { ErrorBoundary } from "@k8slens/error-boundary";
+import { ErrorBoundary } from "@love2hina-net/k8slens.error-boundary";
 import type { NamespaceStore } from "../../components/namespaces/store";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import namespaceStoreInjectable  from "../../components/namespaces/store.injectable";
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
-import { disposer } from "@k8slens/utilities";
+import { disposer } from "@love2hina-net/k8slens.utilities";
 import subscribeStoresInjectable from "../../kube-watch-api/subscribe-stores.injectable";
-import type { ClusterFrameChildComponent } from "@k8slens/react-application";
-import { clusterFrameChildComponentInjectionToken } from "@k8slens/react-application";
+import type { ClusterFrameChildComponent } from "@love2hina-net/k8slens.react-application";
+import { clusterFrameChildComponentInjectionToken } from "@love2hina-net/k8slens.react-application";
 import watchHistoryStateInjectable from "../../remote-helpers/watch-history-state.injectable";
 import { computedInjectManyInjectable } from "@ogre-tools/injectable-extension-for-mobx";
 import type { IComputedValue } from "mobx";

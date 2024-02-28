@@ -7,7 +7,7 @@ import { action } from "mobx";
 import weblinksStateInjectable from "./state.injectable";
 import type { WeblinkData } from "./storage.injectable";
 import * as uuid from "uuid";
-import { getOrInsert } from "@k8slens/utilities";
+import { getOrInsert } from "@love2hina-net/k8slens.utilities";
 
 export interface WeblinkCreateOptions {
   id?: string;

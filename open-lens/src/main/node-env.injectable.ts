@@ -1,5 +1,5 @@
 import { getInjectable } from "@ogre-tools/injectable";
-import { nodeEnvInjectionToken } from "@k8slens/core/main";
+import { nodeEnvInjectionToken } from "@love2hina-net/k8slens.core/main";
 
 export const nodeEnvInjectable = getInjectable({
   id: "node-env",

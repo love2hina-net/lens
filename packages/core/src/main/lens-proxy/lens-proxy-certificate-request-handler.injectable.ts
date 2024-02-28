@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { lensProxyCertificateChannel } from "../../common/certificate/lens-proxy-certificate-channel";
-import { getRequestChannelListenerInjectable } from "@k8slens/messaging";
+import { getRequestChannelListenerInjectable } from "@love2hina-net/k8slens.messaging";
 import lensProxyCertificateInjectable from "../../common/certificate/lens-proxy-certificate.injectable";
 
 const lensProxyCertificateRequestHandlerInjectable = getRequestChannelListenerInjectable({

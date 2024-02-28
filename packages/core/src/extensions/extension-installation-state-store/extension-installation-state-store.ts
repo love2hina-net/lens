@@ -4,12 +4,12 @@
  */
 
 import { action, computed, observable } from "mobx";
-import { disposer } from "@k8slens/utilities";
-import type { ExtendableDisposer } from "@k8slens/utilities";
+import { disposer } from "@love2hina-net/k8slens.utilities";
+import type { ExtendableDisposer } from "@love2hina-net/k8slens.utilities";
 import * as uuid from "uuid";
 import { broadcastMessage } from "../../common/ipc";
 import { ipcRenderer } from "electron";
-import type { Logger } from "@k8slens/logger";
+import type { Logger } from "@love2hina-net/k8slens.logger";
 
 export enum ExtensionInstallationState {
   INSTALLING = "installing",

@@ -1,6 +1,6 @@
 import { autoRegister } from "@ogre-tools/injectable-extension-for-auto-registration";
-import { getFeature } from "@k8slens/feature-core";
-import { messagingFeature } from "@k8slens/messaging";
+import { getFeature } from "@love2hina-net/k8slens.feature-core";
+import { messagingFeature } from "@love2hina-net/k8slens.messaging";
 
 export const messagingFeatureForRenderer = getFeature({
   id: "messaging-for-renderer",

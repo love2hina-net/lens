@@ -6,12 +6,12 @@
 import { action, makeObservable, observable, reaction } from "mobx";
 import { ItemStore } from "../../../common/item.store";
 import type { StorageLayer } from "../../utils/storage-helper";
-import { disposer } from "@k8slens/utilities";
+import { disposer } from "@love2hina-net/k8slens.utilities";
 import type { ForwardedPort } from "../port-forward-item";
 import { PortForwardItem } from "../port-forward-item";
 import { waitUntilFree } from "tcp-port-used";
-import type { Logger } from "@k8slens/logger";
-import type { JsonApi } from "@k8slens/json-api";
+import type { Logger } from "@love2hina-net/k8slens.logger";
+import type { JsonApi } from "@love2hina-net/k8slens.json-api";
 import type { RequestActivePortForward } from "./request-active-port-forward.injectable";
 import autoBind from "auto-bind";
 

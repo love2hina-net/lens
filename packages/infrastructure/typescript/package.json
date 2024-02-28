@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/typescript",
+  "name": "@love2hina-net/k8slens.typescript",
   "private": false,
   "version": "6.5.0",
   "description": "Typescript configuration for Lens packages.",

@@ -11,16 +11,16 @@ import { Link } from "react-router-dom";
 import { observer } from "mobx-react";
 import { DrawerItem, DrawerTitle } from "../drawer";
 import { Badge } from "../badge";
-import type { PersistentVolumeClaimApi, StorageClassApi } from "@k8slens/kube-api";
-import { PersistentVolume } from "@k8slens/kube-object";
+import type { PersistentVolumeClaimApi, StorageClassApi } from "@love2hina-net/k8slens.kube-api";
+import { PersistentVolume } from "@love2hina-net/k8slens.kube-object";
 import type { KubeObjectDetailsProps } from "../kube-object-details";
-import type { Logger } from "@k8slens/logger";
-import { stopPropagation } from "@k8slens/utilities";
+import type { Logger } from "@love2hina-net/k8slens.logger";
+import { stopPropagation } from "@love2hina-net/k8slens.utilities";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
-import { persistentVolumeClaimApiInjectable, storageClassApiInjectable } from "@k8slens/kube-api-specifics";
+import { persistentVolumeClaimApiInjectable, storageClassApiInjectable } from "@love2hina-net/k8slens.kube-api-specifics";
 
 export interface PersistentVolumeDetailsProps extends KubeObjectDetailsProps<PersistentVolume> {
 }

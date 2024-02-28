@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import type { RenderResult } from "@testing-library/react";
-import { sidebarItemInjectionToken } from "@k8slens/cluster-sidebar";
+import { sidebarItemInjectionToken } from "@love2hina-net/k8slens.cluster-sidebar";
 import { runInAction } from "mobx";
 import { routeSpecificComponentInjectionToken } from "../../renderer/routes/route-specific-component-injection-token";
 import React from "react";

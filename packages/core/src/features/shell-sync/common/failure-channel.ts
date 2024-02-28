@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { MessageChannel } from "@k8slens/messaging";
+import type { MessageChannel } from "@love2hina-net/k8slens.messaging";
 
 export const shellSyncFailedChannel: MessageChannel<string> = {
   id: "shell-sync-failed-channel",

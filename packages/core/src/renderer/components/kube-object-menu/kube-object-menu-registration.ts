@@ -5,7 +5,7 @@
 
 import type { IComputedValue } from "mobx";
 import type React from "react";
-import type { KubeObject } from "@k8slens/kube-object";
+import type { KubeObject } from "@love2hina-net/k8slens.kube-object";
 
 export interface KubeObjectMenuItemProps {
   object: KubeObject;

@@ -9,7 +9,7 @@ import { Table } from "../table/table";
 import { TableHead } from "../table/table-head";
 import { TableRow } from "../table/table-row";
 import React from "react";
-import type { Node } from "@k8slens/kube-object";
+import type { Node } from "@love2hina-net/k8slens.kube-object";
 import { TableCell } from "../table/table-cell";
 
 export interface NodeDetailsResourcesProps {

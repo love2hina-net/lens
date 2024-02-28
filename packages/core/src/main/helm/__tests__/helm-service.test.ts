@@ -6,9 +6,9 @@
 import { getDiForUnitTesting } from "../../getDiForUnitTesting";
 import listHelmChartsInjectable from "../helm-service/list-helm-charts.injectable";
 import getActiveHelmRepositoriesInjectable from "../repositories/get-active-helm-repositories/get-active-helm-repositories.injectable";
-import type { AsyncResult } from "@k8slens/utilities";
+import type { AsyncResult } from "@love2hina-net/k8slens.utilities";
 import type { HelmRepo } from "../../../common/helm/helm-repo";
-import { sortBySemverVersion } from "@k8slens/utilities";
+import { sortBySemverVersion } from "@love2hina-net/k8slens.utilities";
 import helmChartManagerInjectable from "../helm-chart-manager.injectable";
 
 describe("Helm Service tests", () => {

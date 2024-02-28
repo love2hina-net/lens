@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/spinner",
+  "name": "@love2hina-net/k8slens.spinner",
   "private": false,
   "version": "1.0.0",
   "description": "Highly extendable spinner in the Lens.",
@@ -33,11 +33,11 @@
     "lint:fix": "lens-lint --fix"
   },
   "peerDependencies": {
-    "@k8slens/utilities": "^1.0.0-alpha.1",
+    "@love2hina-net/k8slens.utilities": "^1.0.0-alpha.1",
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "@k8slens/eslint-config": "^6.5.0",
-    "@k8slens/webpack": "^6.5.0"
+    "@love2hina-net/k8slens.eslint-config": "^6.5.0",
+    "@love2hina-net/k8slens.webpack": "^6.5.0"
   }
 }

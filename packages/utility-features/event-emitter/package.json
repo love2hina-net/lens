@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/event-emitter",
+  "name": "@love2hina-net/k8slens.event-emitter",
   "private": false,
   "version": "1.0.0",
   "description": "Event emitter",
@@ -31,9 +31,9 @@
     "lint:fix": "lens-lint --fix"
   },
   "devDependencies": {
-    "@k8slens/eslint-config": "^6.5.0",
-    "@k8slens/jest": "^6.5.0",
-    "@k8slens/typescript": "^6.5.0",
-    "@k8slens/webpack": "^6.5.0"
+    "@love2hina-net/k8slens.eslint-config": "^6.5.0",
+    "@love2hina-net/k8slens.jest": "^6.5.0",
+    "@love2hina-net/k8slens.typescript": "^6.5.0",
+    "@love2hina-net/k8slens.webpack": "^6.5.0"
   }
 }

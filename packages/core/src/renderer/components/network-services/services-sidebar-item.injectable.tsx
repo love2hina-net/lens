@@ -6,7 +6,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 
 import servicesRouteInjectable from "../../../common/front-end-routing/routes/cluster/network/services/services-route.injectable";
 import networkSidebarItemInjectable from "../network/network-sidebar-item.injectable";
-import { sidebarItemInjectionToken } from "@k8slens/cluster-sidebar";
+import { sidebarItemInjectionToken } from "@love2hina-net/k8slens.cluster-sidebar";
 import routeIsActiveInjectable from "../../routes/route-is-active.injectable";
 import navigateToServicesInjectable from "../../../common/front-end-routing/routes/cluster/network/services/navigate-to-services.injectable";
 

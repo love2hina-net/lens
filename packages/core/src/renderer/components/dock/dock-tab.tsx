@@ -7,17 +7,17 @@ import styles from "./dock-tab.module.scss";
 
 import React from "react";
 import { observer } from "mobx-react";
-import type { StrictReactNode } from "@k8slens/utilities";
-import { cssNames, prevDefault, isMiddleClick } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames, prevDefault, isMiddleClick } from "@love2hina-net/k8slens.utilities";
 import type { DockStore, DockTab as DockTabModel } from "./dock/store";
 import type { TabProps } from "../tabs";
 import { Tab } from "../tabs";
-import { Icon } from "@k8slens/icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import { Menu, MenuItem } from "../menu";
 import { observable } from "mobx";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import dockStoreInjectable from "./dock/store.injectable";
-import { Tooltip, TooltipPosition } from "@k8slens/tooltip";
+import { Tooltip, TooltipPosition } from "@love2hina-net/k8slens.tooltip";
 import isMacInjectable from "../../../common/vars/is-mac.injectable";
 import autoBindReact from "auto-bind/react";
 

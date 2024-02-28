@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import { KubeObject } from "@k8slens/kube-object";
+import { KubeObject } from "@love2hina-net/k8slens.kube-object";
 
 describe("KubeObject", () => {
   describe("isJsonApiData", () => {

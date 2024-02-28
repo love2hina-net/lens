@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/feature-core",
+  "name": "@love2hina-net/k8slens.feature-core",
   "private": false,
   "version": "6.5.0",
   "description": "Code that is common to all Features and those registering them.",
@@ -34,7 +34,7 @@
     "@ogre-tools/injectable": "^17.2.0"
   },
   "devDependencies": {
-    "@k8slens/eslint-config": "^6.5.0",
-    "@k8slens/webpack": "^6.5.0"
+    "@love2hina-net/k8slens.eslint-config": "^6.5.0",
+    "@love2hina-net/k8slens.webpack": "^6.5.0"
   }
 }

@@ -5,8 +5,8 @@
 import "./hotbar-menu.scss";
 
 import React, { useState } from "react";
-import type { StrictReactNode } from "@k8slens/utilities";
-import { cssNames } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 
 export interface HotbarCellProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: StrictReactNode;

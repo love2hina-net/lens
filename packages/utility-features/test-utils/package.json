@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/test-utils",
+  "name": "@love2hina-net/k8slens.test-utils",
   "version": "1.0.0",
   "description": "A collection of utilities for testing",
   "type": "commonjs",
@@ -33,7 +33,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@k8slens/webpack": "^6.5.0",
+    "@love2hina-net/k8slens.webpack": "^6.5.0",
     "@types/lodash": "^4.14.191"
   }
 }

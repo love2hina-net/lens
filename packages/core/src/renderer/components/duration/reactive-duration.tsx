@@ -5,7 +5,7 @@
 
 import { observer } from "mobx-react";
 import React from "react";
-import { formatDuration } from "@k8slens/utilities";
+import { formatDuration } from "@love2hina-net/k8slens.utilities";
 import { reactiveNow } from "../../../common/utils/reactive-now/reactive-now";
 
 export interface ReactiveDurationProps {

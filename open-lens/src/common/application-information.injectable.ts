@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import packageJson from "../../package.json";
-import { applicationInformationToken } from "@k8slens/application";
+import { applicationInformationToken } from "@love2hina-net/k8slens.application";
 
 const applicationInformationInjectable = getInjectable({
   id: "application-information",

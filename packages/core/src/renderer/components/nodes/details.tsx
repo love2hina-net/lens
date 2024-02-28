@@ -12,17 +12,17 @@ import { disposeOnUnmount, observer } from "mobx-react";
 import { DrawerItem } from "../drawer";
 import { Badge } from "../badge";
 import type { KubeObjectDetailsProps } from "../kube-object-details";
-import { formatNodeTaint, Node } from "@k8slens/kube-object";
+import { formatNodeTaint, Node } from "@love2hina-net/k8slens.kube-object";
 import { PodDetailsList } from "../workloads-pods/pod-details-list";
 import { NodeDetailsResources } from "./details-resources";
 import { DrawerTitle } from "../drawer/drawer-title";
-import type { Logger } from "@k8slens/logger";
+import type { Logger } from "@love2hina-net/k8slens.logger";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import type { SubscribeStores } from "../../kube-watch-api/kube-watch-api";
 import subscribeStoresInjectable from "../../kube-watch-api/subscribe-stores.injectable";
 import type { PodStore } from "../workloads-pods/store";
 import podStoreInjectable from "../workloads-pods/store.injectable";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import loadPodsFromAllNamespacesInjectable
   from "../workloads-pods/load-pods-from-all-namespaces.injectable";
 

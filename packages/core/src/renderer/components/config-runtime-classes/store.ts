@@ -4,8 +4,8 @@
  */
 
 import { KubeObjectStore } from "../../../common/k8s-api/kube-object.store";
-import type { RuntimeClassApi } from "@k8slens/kube-api";
-import type { RuntimeClass } from "@k8slens/kube-object";
+import type { RuntimeClassApi } from "@love2hina-net/k8slens.kube-api";
+import type { RuntimeClass } from "@love2hina-net/k8slens.kube-object";
 
 export class RuntimeClassStore extends KubeObjectStore<RuntimeClass, RuntimeClassApi> {
 }

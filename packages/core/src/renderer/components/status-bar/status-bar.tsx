@@ -13,7 +13,7 @@ import statusBarItemsInjectable from "./status-bar-items.injectable";
 import type { IComputedValue, IObservableValue } from "mobx";
 import type { StatusBarStatus } from "./current-status.injectable";
 import statusBarCurrentStatusInjectable from "./current-status.injectable";
-import { cssNames } from "@k8slens/utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 
 export interface StatusBarProps {}
 

@@ -4,7 +4,7 @@
  */
 
 import { computed } from "mobx";
-import { getGlobalOverride } from "@k8slens/test-utils";
+import { getGlobalOverride } from "@love2hina-net/k8slens.test-utils";
 import execHelmEnvInjectable from "./exec-env.injectable";
 
 export default getGlobalOverride(execHelmEnvInjectable, () => computed(() => ({})));

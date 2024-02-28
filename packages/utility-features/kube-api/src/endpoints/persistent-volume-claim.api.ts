@@ -5,7 +5,7 @@
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 import { KubeApi } from "../kube-api";
-import { PersistentVolumeClaim } from "@k8slens/kube-object";
+import { PersistentVolumeClaim } from "@love2hina-net/k8slens.kube-object";
 
 export class PersistentVolumeClaimApi extends KubeApi<PersistentVolumeClaim> {
   constructor(deps: KubeApiDependencies, opts?: DerivedKubeApiOptions) {

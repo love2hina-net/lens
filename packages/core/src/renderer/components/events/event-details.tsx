@@ -11,17 +11,17 @@ import { DrawerItem, DrawerTitle } from "../drawer";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react";
 import type { KubeObjectDetailsProps } from "../kube-object-details";
-import { KubeEvent } from "@k8slens/kube-object";
+import { KubeEvent } from "@love2hina-net/k8slens.kube-object";
 import { Table, TableCell, TableHead, TableRow } from "../table";
 import type { ApiManager } from "../../../common/k8s-api/api-manager";
-import type { Logger } from "@k8slens/logger";
+import type { Logger } from "@love2hina-net/k8slens.logger";
 import { DurationAbsoluteTimestamp } from "./duration-absolute";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import type { GetDetailsUrl } from "../kube-detail-params/get-details-url.injectable";
 import apiManagerInjectable from "../../../common/k8s-api/api-manager/manager.injectable";
 import getDetailsUrlInjectable from "../kube-detail-params/get-details-url.injectable";
-import { cssNames } from "@k8slens/utilities";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 
 export interface EventDetailsProps extends KubeObjectDetailsProps<KubeEvent> {
 }

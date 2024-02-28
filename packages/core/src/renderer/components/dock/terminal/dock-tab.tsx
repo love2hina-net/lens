@@ -6,10 +6,10 @@
 import "./terminal-dock-tab.scss";
 import React from "react";
 import { disposeOnUnmount, observer } from "mobx-react";
-import { cssNames } from "@k8slens/utilities";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 import type { DockTabProps } from "../dock-tab";
 import { DockTab } from "../dock-tab";
-import { Icon } from "@k8slens/icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import type { TerminalStore } from "./store";
 import type { DockStore } from "../dock/store";
 import { reaction } from "mobx";

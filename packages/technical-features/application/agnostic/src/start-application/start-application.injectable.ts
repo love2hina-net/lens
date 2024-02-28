@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { getInjectable, getInjectionToken } from "@ogre-tools/injectable";
-import { runManyFor } from "@k8slens/run-many";
+import { runManyFor } from "@love2hina-net/k8slens.run-many";
 import * as timeSlots from "./time-slots";
 
 export type StartApplication = () => Promise<void>;

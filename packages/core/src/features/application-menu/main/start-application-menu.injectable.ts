@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import applicationMenuReactivityInjectable from "./application-menu-reactivity.injectable";
-import { onLoadOfApplicationInjectionToken } from "@k8slens/application";
+import { onLoadOfApplicationInjectionToken } from "@love2hina-net/k8slens.application";
 
 const startApplicationMenuInjectable = getInjectable({
   id: "start-application-menu",

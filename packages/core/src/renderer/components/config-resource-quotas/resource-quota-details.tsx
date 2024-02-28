@@ -8,14 +8,14 @@ import React from "react";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
 import { DrawerItem, DrawerTitle } from "../drawer";
-import { cpuUnitsToNumber, cssNames, unitsToBytes, metricUnitsToNumber, object, hasDefinedTupleValue } from "@k8slens/utilities";
+import { cpuUnitsToNumber, cssNames, unitsToBytes, metricUnitsToNumber, object, hasDefinedTupleValue } from "@love2hina-net/k8slens.utilities";
 import type { KubeObjectDetailsProps } from "../kube-object-details";
-import { ResourceQuota } from "@k8slens/kube-object";
+import { ResourceQuota } from "@love2hina-net/k8slens.kube-object";
 import { LineProgress } from "../line-progress";
 import { Table, TableCell, TableHead, TableRow } from "../table";
-import type { Logger } from "@k8slens/logger";
+import type { Logger } from "@love2hina-net/k8slens.logger";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 
 export interface ResourceQuotaDetailsProps extends KubeObjectDetailsProps<ResourceQuota> {
 }

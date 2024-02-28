@@ -13,10 +13,10 @@ import type { Cluster } from "../../../common/cluster/cluster";
 import { Avatar } from "../avatar";
 import { FilePicker, OverSizeLimitStyle } from "../file-picker";
 import { MenuActions, MenuItem } from "../menu";
-import type { ShowNotification } from "@k8slens/notifications";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
-import { clusterIconSettingsComponentInjectionToken, clusterIconSettingsMenuInjectionToken } from "@k8slens/cluster-settings";
-import type { ClusterIconMenuItem, ClusterIconSettingsComponent } from "@k8slens/cluster-settings";
+import type { ShowNotification } from "@love2hina-net/k8slens.notifications";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
+import { clusterIconSettingsComponentInjectionToken, clusterIconSettingsMenuInjectionToken } from "@love2hina-net/k8slens.cluster-settings";
+import type { ClusterIconMenuItem, ClusterIconSettingsComponent } from "@love2hina-net/k8slens.cluster-settings";
 
 export interface ClusterIconSettingProps {
   cluster: Cluster;

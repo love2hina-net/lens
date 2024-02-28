@@ -1,5 +1,5 @@
 {
-  "name": "@k8slens/eslint-config",
+  "name": "@love2hina-net/k8slens.eslint-config",
   "version": "6.5.0",
   "description": "Lens eslint and prettier configurations",
   "author": {

@@ -31,7 +31,7 @@
             "sourceMaps": true,
             "sourceMapPathOverrides": {
                 "webpack://open-lens/*": "${webRoot}/open-lens/*",
-                "webpack://@k8slens/core/*": "${webRoot}/packages/core/*"
+                "webpack://@love2hina-net/k8slens.core/*": "${webRoot}/packages/core/*"
             }
         },
         {

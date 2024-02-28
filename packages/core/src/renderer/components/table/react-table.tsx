@@ -7,8 +7,8 @@ import styles from "./react-table.module.scss";
 import React, { useCallback, useMemo } from "react";
 import type { Row, UseTableOptions } from "react-table";
 import { useFlexLayout, useSortBy, useTable } from "react-table";
-import { Icon } from "@k8slens/icon";
-import { cssNames } from "@k8slens/utilities";
+import { Icon } from "@love2hina-net/k8slens.icon";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
 
 export interface ReactTableProps<Data extends object> extends UseTableOptions<Data> {
   headless?: boolean;

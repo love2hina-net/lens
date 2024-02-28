@@ -5,7 +5,7 @@
 import { getInjectable } from "@ogre-tools/injectable";
 import type { LocationDescriptor } from "history";
 import { action } from "mobx";
-import { observableHistoryInjectionToken } from "@k8slens/routing";
+import { observableHistoryInjectionToken } from "@love2hina-net/k8slens.routing";
 import { createPath } from "history";
 
 export type Navigate = (location: LocationDescriptor) => void;

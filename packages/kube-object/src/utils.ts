@@ -11,7 +11,7 @@ import {
   bindPredicate,
   isTypedArray,
   isRecord,
-} from "@k8slens/utilities";
+} from "@love2hina-net/k8slens.utilities";
 import type {
   KubeJsonApiData,
   KubeObjectMetadata,

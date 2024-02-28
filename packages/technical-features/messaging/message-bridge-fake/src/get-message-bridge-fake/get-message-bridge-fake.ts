@@ -5,7 +5,7 @@ import type {
   MessageChannelListener,
   RequestChannel,
   RequestChannelHandler,
-} from "@k8slens/messaging";
+} from "@love2hina-net/k8slens.messaging";
 
 import {
   enlistMessageChannelListenerInjectionToken,
@@ -13,7 +13,7 @@ import {
   RequestFromChannel,
   requestFromChannelInjectionToken,
   sendMessageToChannelInjectionToken,
-} from "@k8slens/messaging";
+} from "@love2hina-net/k8slens.messaging";
 
 import { pipeline } from "@ogre-tools/fp";
 import { filter, map } from "lodash/fp";

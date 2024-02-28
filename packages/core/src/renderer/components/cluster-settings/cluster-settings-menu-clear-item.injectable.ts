@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import { getInjectable } from "@ogre-tools/injectable";
-import { clusterIconSettingsMenuInjectionToken } from "@k8slens/cluster-settings";
+import { clusterIconSettingsMenuInjectionToken } from "@love2hina-net/k8slens.cluster-settings";
 
 const clusterIconSettingsMenuClearItem = getInjectable({
   id: "cluster-icon-settings-menu-clear-item",

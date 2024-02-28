@@ -3,7 +3,7 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 
-import type { StrictReactNode } from "@k8slens/utilities";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
 import { render, RenderResult } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";

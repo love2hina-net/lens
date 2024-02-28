@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import { observable } from "mobx";
-import type { RoleBinding } from "@k8slens/kube-object";
+import type { RoleBinding } from "@love2hina-net/k8slens.kube-object";
 
 export type RoleBindingDialogState = {
   isOpen: false;

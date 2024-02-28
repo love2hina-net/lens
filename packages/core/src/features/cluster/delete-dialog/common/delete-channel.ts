@@ -3,8 +3,8 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import type { ClusterId } from "../../../../common/cluster-types";
-import type { RequestChannel } from "@k8slens/messaging";
-import { getRequestChannel } from "@k8slens/messaging";
+import type { RequestChannel } from "@love2hina-net/k8slens.messaging";
+import { getRequestChannel } from "@love2hina-net/k8slens.messaging";
 
 export type DeleteClusterChannel = RequestChannel<ClusterId, void>;
 

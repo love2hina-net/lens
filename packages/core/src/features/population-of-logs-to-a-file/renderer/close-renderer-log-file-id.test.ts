@@ -3,10 +3,10 @@
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
 import type winston from "winston";
-import type { SendMessageToChannel } from "@k8slens/messaging";
-import { sendMessageToChannelInjectionToken } from "@k8slens/messaging";
+import type { SendMessageToChannel } from "@love2hina-net/k8slens.messaging";
+import { sendMessageToChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 import type { DiContainer } from "@ogre-tools/injectable";
-import { winstonLoggerInjectable } from "@k8slens/logger";
+import { winstonLoggerInjectable } from "@love2hina-net/k8slens.logger";
 import { getDiForUnitTesting } from "../../../renderer/getDiForUnitTesting";
 import closeRendererLogFileInjectable from "./close-renderer-log-file.injectable";
 import rendererLogFileIdInjectable from "./renderer-log-file-id.injectable";

@@ -9,17 +9,17 @@ import React from "react";
 import type { IObservableValue } from "mobx";
 import { observable, makeObservable, computed } from "mobx";
 import { observer } from "mobx-react";
-import type { StrictReactNode } from "@k8slens/utilities";
-import { cssNames, noop, prevDefault } from "@k8slens/utilities";
-import type { ButtonProps } from "@k8slens/button";
-import { Button } from "@k8slens/button";
+import type { StrictReactNode } from "@love2hina-net/k8slens.utilities";
+import { cssNames, noop, prevDefault } from "@love2hina-net/k8slens.utilities";
+import type { ButtonProps } from "@love2hina-net/k8slens.button";
+import { Button } from "@love2hina-net/k8slens.button";
 import type { DialogProps } from "../dialog";
 import { Dialog } from "../dialog";
-import { Icon } from "@k8slens/icon";
-import type { ShowNotification } from "@k8slens/notifications";
+import { Icon } from "@love2hina-net/k8slens.icon";
+import type { ShowNotification } from "@love2hina-net/k8slens.notifications";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import confirmDialogStateInjectable from "./state.injectable";
-import { showErrorNotificationInjectable } from "@k8slens/notifications";
+import { showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 
 export interface ConfirmDialogProps extends Partial<DialogProps> {
 }

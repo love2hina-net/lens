@@ -14,19 +14,19 @@ import { Dialog } from "../../dialog";
 import { Wizard, WizardStep } from "../../wizard";
 import { Input } from "../../input";
 import { systemName } from "../../input/input_validators";
-import type { ResourceQuotaValues } from "@k8slens/kube-object";
-import type { ResourceQuotaApi } from "@k8slens/kube-api";
+import type { ResourceQuotaValues } from "@love2hina-net/k8slens.kube-object";
+import type { ResourceQuotaApi } from "@love2hina-net/k8slens.kube-api";
 import { Select } from "../../select";
-import { Icon } from "@k8slens/icon";
-import { Button } from "@k8slens/button";
+import { Icon } from "@love2hina-net/k8slens.icon";
+import { Button } from "@love2hina-net/k8slens.button";
 import { NamespaceSelect } from "../../namespaces/namespace-select";
 import { SubTitle } from "../../layout/sub-title";
 import { withInjectables } from "@ogre-tools/injectable-react";
 import closeAddQuotaDialogInjectable from "./close.injectable";
 import isAddQuotaDialogOpenInjectable from "./is-open.injectable";
-import { resourceQuotaApiInjectable } from "@k8slens/kube-api-specifics";
-import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
-import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
+import { resourceQuotaApiInjectable } from "@love2hina-net/k8slens.kube-api-specifics";
+import type { ShowCheckedErrorNotification } from "@love2hina-net/k8slens.notifications";
+import { showCheckedErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 
 export interface AddQuotaDialogProps extends DialogProps {
 }

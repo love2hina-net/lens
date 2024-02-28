@@ -4,8 +4,8 @@
  */
 
 import React from "react";
-import type { IconProps } from "@k8slens/icon";
-import { Icon } from "@k8slens/icon";
+import type { IconProps } from "@love2hina-net/k8slens.icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import { FilterType } from "./page-filters/store";
 
 export interface FilterIconProps extends Partial<IconProps> {

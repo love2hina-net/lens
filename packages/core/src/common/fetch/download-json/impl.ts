@@ -2,9 +2,9 @@
  * Copyright (c) OpenLens Authors. All rights reserved.
  * Licensed under MIT License. See LICENSE in root directory for more information.
  */
-import type { AsyncResult } from "@k8slens/utilities";
+import type { AsyncResult } from "@love2hina-net/k8slens.utilities";
 import type { Fetch } from "../fetch.injectable";
-import type { RequestInit, Response } from "@k8slens/node-fetch";
+import type { RequestInit, Response } from "@love2hina-net/k8slens.node-fetch";
 
 export interface DownloadJsonOptions {
   signal?: AbortSignal | null | undefined;

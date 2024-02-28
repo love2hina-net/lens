@@ -12,16 +12,16 @@ import { observer } from "mobx-react";
 import type { DialogProps } from "../../dialog";
 import { Dialog } from "../../dialog";
 import { Wizard, WizardStep } from "../../wizard";
-import { Icon } from "@k8slens/icon";
+import { Icon } from "@love2hina-net/k8slens.icon";
 import { Slider } from "../../slider";
-import { cssNames } from "@k8slens/utilities";
-import type { ReplicaSet } from "@k8slens/kube-object";
+import { cssNames } from "@love2hina-net/k8slens.utilities";
+import type { ReplicaSet } from "@love2hina-net/k8slens.kube-object";
 import { withInjectables } from "@ogre-tools/injectable-react";
-import { replicaSetApiInjectable } from "@k8slens/kube-api-specifics";
+import { replicaSetApiInjectable } from "@love2hina-net/k8slens.kube-api-specifics";
 import replicaSetScaleDialogStateInjectable from "./state.injectable";
-import type { ShowCheckedErrorNotification } from "@k8slens/notifications";
-import { showCheckedErrorNotificationInjectable } from "@k8slens/notifications";
-import type { ReplicaSetApi } from "@k8slens/kube-api";
+import type { ShowCheckedErrorNotification } from "@love2hina-net/k8slens.notifications";
+import { showCheckedErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
+import type { ReplicaSetApi } from "@love2hina-net/k8slens.kube-api";
 
 export interface ReplicaSetScaleDialogProps extends Partial<DialogProps> {
 }

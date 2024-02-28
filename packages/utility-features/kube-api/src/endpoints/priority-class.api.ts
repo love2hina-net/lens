@@ -5,8 +5,8 @@
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 import { KubeApi } from "../kube-api";
-import type { PriorityClassData } from "@k8slens/kube-object";
-import { PriorityClass } from "@k8slens/kube-object";
+import type { PriorityClassData } from "@love2hina-net/k8slens.kube-object";
+import { PriorityClass } from "@love2hina-net/k8slens.kube-object";
 
 export class PriorityClassApi extends KubeApi<PriorityClass, PriorityClassData> {
   constructor(deps: KubeApiDependencies, opts: DerivedKubeApiOptions = {}) {

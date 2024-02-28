@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import { kubectlDeleteAllChannel, kubectlDeleteAllInjectionToken } from "../../common/kube-helpers/channels";
-import { requestFromChannelInjectionToken } from "@k8slens/messaging";
+import { requestFromChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 
 const kubectlDeleteAllInjectable = getInjectable({
   id: "kubectl-delete-all",

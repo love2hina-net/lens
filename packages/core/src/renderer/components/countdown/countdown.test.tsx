@@ -12,7 +12,7 @@ import React from "react";
 import type { RenderResult } from "@testing-library/react";
 import type { IComputedValue } from "mobx";
 import { observe } from "mobx";
-import { noop } from "@k8slens/utilities";
+import { noop } from "@love2hina-net/k8slens.utilities";
 import { testUsingFakeTime, advanceFakeTime } from "../../../test-utils/use-fake-time";
 
 describe("countdown", () => {

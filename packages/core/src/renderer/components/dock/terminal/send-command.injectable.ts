@@ -4,10 +4,10 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import { when } from "mobx";
-import { loggerInjectionToken } from "@k8slens/logger";
+import { loggerInjectionToken } from "@love2hina-net/k8slens.logger";
 import { TerminalChannels } from "../../../../common/terminal/channels";
-import { waitUntilDefined, noop } from "@k8slens/utilities";
-import { showSuccessNotificationInjectable } from "@k8slens/notifications";
+import { waitUntilDefined, noop } from "@love2hina-net/k8slens.utilities";
+import { showSuccessNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 import selectDockTabInjectable from "../dock/select-dock-tab.injectable";
 import type { TabId } from "../dock/store";
 import createTerminalTabInjectable from "./create-terminal-tab.injectable";

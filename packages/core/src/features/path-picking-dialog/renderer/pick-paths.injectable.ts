@@ -4,7 +4,7 @@
  */
 import { getInjectable } from "@ogre-tools/injectable";
 import type { PathPickOpts } from "../../../renderer/components/path-picker";
-import { requestFromChannelInjectionToken } from "@k8slens/messaging";
+import { requestFromChannelInjectionToken } from "@love2hina-net/k8slens.messaging";
 import { openPathPickingDialogChannel } from "../common/channel";
 
 export type OpenPathPickingDialog = (options: PathPickOpts) => Promise<void>;

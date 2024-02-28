@@ -5,7 +5,7 @@
 
 import type { DerivedKubeApiOptions, KubeApiDependencies } from "../kube-api";
 import { KubeApi } from "../kube-api";
-import { Lease } from "@k8slens/kube-object";
+import { Lease } from "@love2hina-net/k8slens.kube-object";
 
 export class LeaseApi extends KubeApi<Lease> {
   constructor(deps: KubeApiDependencies, opts?: DerivedKubeApiOptions) {

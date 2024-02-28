@@ -5,20 +5,20 @@
 import { getInjectable, lifecycleEnum } from "@ogre-tools/injectable";
 import type { RequestKubeResource } from "./request-kube-resource.injectable";
 import requestKubeResourceInjectable from "./request-kube-resource.injectable";
-import { waitUntilDefined } from "@k8slens/utilities";
+import { waitUntilDefined } from "@love2hina-net/k8slens.utilities";
 import editResourceTabStoreInjectable from "../store.injectable";
 import type { EditingResource, EditResourceTabStore } from "../store";
 import { action, computed, observable, runInAction } from "mobx";
-import type { KubeObject, RawKubeObject } from "@k8slens/kube-object";
+import type { KubeObject, RawKubeObject } from "@love2hina-net/k8slens.kube-object";
 import yaml from "js-yaml";
 import assert from "assert";
 import type { RequestPatchKubeResource } from "./request-patch-kube-resource.injectable";
 import requestPatchKubeResourceInjectable from "./request-patch-kube-resource.injectable";
 import { createPatch } from "rfc6902";
-import type { ShowNotification } from "@k8slens/notifications";
-import { showSuccessNotificationInjectable, showErrorNotificationInjectable } from "@k8slens/notifications";
+import type { ShowNotification } from "@love2hina-net/k8slens.notifications";
+import { showSuccessNotificationInjectable, showErrorNotificationInjectable } from "@love2hina-net/k8slens.notifications";
 import React from "react";
-import { createKubeApiURL, parseKubeApi } from "@k8slens/kube-api";
+import { createKubeApiURL, parseKubeApi } from "@love2hina-net/k8slens.kube-api";
 
 const editResourceModelInjectable = getInjectable({
   id: "edit-resource-model",

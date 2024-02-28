@@ -6,8 +6,8 @@
 import type { RenderResult } from "@testing-library/react";
 import type { ApplicationBuilder } from "../../renderer/components/test-utils/get-application-builder";
 import { getApplicationBuilder } from "../../renderer/components/test-utils/get-application-builder";
-import type { Discover } from "@k8slens/react-testing-library-discovery";
-import { discoverFor } from "@k8slens/react-testing-library-discovery";
+import type { Discover } from "@love2hina-net/k8slens.react-testing-library-discovery";
+import { discoverFor } from "@love2hina-net/k8slens.react-testing-library-discovery";
 
 describe("preferences - navigation using application menu", () => {
   let applicationBuilder: ApplicationBuilder;
