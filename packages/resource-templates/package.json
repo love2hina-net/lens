@@ -1,6 +1,6 @@
 {
   "name": "@love2hina-net/k8slens.resource-templates",
-  "version": "1.0.0",
+  "version": "7.0.0+based.1.0.0",
   "private": false,
   "publishConfig": {
     "access": "public",

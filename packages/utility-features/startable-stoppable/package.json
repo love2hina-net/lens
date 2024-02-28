@@ -1,7 +1,7 @@
 {
   "name": "@love2hina-net/k8slens.startable-stoppable",
   "private": false,
-  "version": "1.0.0",
+  "version": "7.0.0+based.1.0.0",
   "description": "TBD",
   "type": "commonjs",
   "publishConfig": {
@@ -28,7 +28,7 @@
     "lint:fix": "lens-lint --fix"
   },
   "devDependencies": {
-    "@love2hina-net/k8slens.eslint-config": "^6.5.0",
-    "@love2hina-net/k8slens.webpack": "^6.5.0"
+    "@love2hina-net/k8slens.eslint-config": "^7.0.0",
+    "@love2hina-net/k8slens.webpack": "^7.0.0"
   }
 }

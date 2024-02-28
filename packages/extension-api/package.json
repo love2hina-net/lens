@@ -2,7 +2,7 @@
   "name": "@love2hina-net/k8slens.extensions",
   "productName": "OpenLens extensions",
   "description": "OpenLens - Open Source Kubernetes IDE: extensions",
-  "version": "6.5.2",
+  "version": "7.0.0+based.6.5.2",
   "copyright": "© 2022 OpenLens Authors",
   "license": "MIT",
   "main": "dist/extension-api.js",
@@ -25,10 +25,10 @@
     "clean": "rimraf dist/"
   },
   "dependencies": {
-    "@love2hina-net/k8slens.core": "6.5.2"
+    "@love2hina-net/k8slens.core": "7.0.0"
   },
   "devDependencies": {
-    "@types/node": "^16.18.25",
+    "@types/node": "^20.11.21",
     "@types/webpack": "^5.28.1",
     "@types/webpack-env": "^1.18.0",
     "@types/webpack-node-externals": "2.5.3",

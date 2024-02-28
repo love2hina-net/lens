@@ -1,7 +1,7 @@
 {
   "name": "@love2hina-net/k8slens.jest",
   "private": false,
-  "version": "6.5.0",
+  "version": "7.0.0+based.6.5.0",
   "description": "Jest configuration and scripts for Lens packages.",
   "type": "commonjs",
   "publishConfig": {

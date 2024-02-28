@@ -1,7 +1,7 @@
 {
   "name": "@love2hina-net/k8slens.kube-api",
   "private": false,
-  "version": "1.0.0-alpha.1",
+  "version": "7.0.0+based.1.0.0-alpha.1",
   "description": "Kube api",
   "type": "commonjs",
   "publishConfig": {
@@ -32,13 +32,13 @@
     "lint:fix": "lens-lint --fix"
   },
   "dependencies": {
-    "@love2hina-net/k8slens.node-fetch": "^6.5.0-alpha.3"
+    "@love2hina-net/k8slens.node-fetch": "^7.0.0"
   },
   "peerDependencies": {
-    "@love2hina-net/k8slens.json-api": "^1.0.0-alpha.1",
-    "@love2hina-net/k8slens.kube-object": "^1.0.0-alpha.5",
-    "@love2hina-net/k8slens.logger": "^1.0.0-alpha.5",
-    "@love2hina-net/k8slens.utilities": "^1.0.0-alpha.1",
+    "@love2hina-net/k8slens.json-api": "^7.0.0",
+    "@love2hina-net/k8slens.kube-object": "^7.0.0",
+    "@love2hina-net/k8slens.logger": "^7.0.0",
+    "@love2hina-net/k8slens.utilities": "^7.0.0",
     "@ogre-tools/fp": "^17.2.0",
     "@ogre-tools/injectable": "^17.2.0",
     "byline": "^5.0.0",
@@ -48,8 +48,8 @@
     "rfc6902": "^5.0.1"
   },
   "devDependencies": {
-    "@love2hina-net/k8slens.eslint-config": "^6.5.0-alpha.2",
-    "@love2hina-net/k8slens.jest": "^6.5.0-alpha.4",
-    "@love2hina-net/k8slens.typescript": "^6.5.0-alpha.2"
+    "@love2hina-net/k8slens.eslint-config": "^7.0.0",
+    "@love2hina-net/k8slens.jest": "^7.0.0",
+    "@love2hina-net/k8slens.typescript": "^7.0.0"
   }
 }

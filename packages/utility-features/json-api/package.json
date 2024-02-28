@@ -1,7 +1,7 @@
 {
   "name": "@love2hina-net/k8slens.json-api",
   "private": false,
-  "version": "1.0.0",
+  "version": "7.0.0+based.1.0.0",
   "description": "JSON api client",
   "type": "commonjs",
   "publishConfig": {
@@ -32,20 +32,20 @@
     "lint:fix": "lens-lint --fix"
   },
   "dependencies": {
-    "@love2hina-net/k8slens.node-fetch": "^6.5.0"
+    "@love2hina-net/k8slens.node-fetch": "^7.0.0"
   },
   "peerDependencies": {
-    "@love2hina-net/k8slens.event-emitter": "^1.0.0-alpha.1",
-    "@love2hina-net/k8slens.logger": "^1.0.0-alpha.5",
-    "@love2hina-net/k8slens.utilities": "^1.0.0-alpha.1",
+    "@love2hina-net/k8slens.event-emitter": "^7.0.0",
+    "@love2hina-net/k8slens.logger": "^7.0.0",
+    "@love2hina-net/k8slens.utilities": "^7.0.0",
     "lodash": "^4.17.15",
     "rfc6902": "^5.0.1"
   },
   "devDependencies": {
-    "@love2hina-net/k8slens.eslint-config": "^6.5.0",
-    "@love2hina-net/k8slens.jest": "^6.5.0",
-    "@love2hina-net/k8slens.typescript": "^6.5.0",
-    "@types/node": "^16.18.25",
+    "@love2hina-net/k8slens.eslint-config": "^7.0.0",
+    "@love2hina-net/k8slens.jest": "^7.0.0",
+    "@love2hina-net/k8slens.typescript": "^7.0.0",
+    "@types/node": "^20.11.21",
     "type-fest": "^2.14.0"
   }
 }

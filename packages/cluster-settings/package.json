@@ -1,6 +1,6 @@
 {
   "name": "@love2hina-net/k8slens.cluster-settings",
-  "version": "6.5.0",
+  "version": "7.0.0+based.6.5.0",
   "description": "Injection token exporter for cluster settings configuration",
   "license": "MIT",
   "type": "commonjs",
@@ -19,7 +19,7 @@
     "build": "lens-webpack-build"
   },
   "devDependencies": {
-    "@love2hina-net/k8slens.webpack": "^6.5.0",
+    "@love2hina-net/k8slens.webpack": "^7.0.0",
     "rimraf": "^4.4.1"
   },
   "peerDependencies": {
