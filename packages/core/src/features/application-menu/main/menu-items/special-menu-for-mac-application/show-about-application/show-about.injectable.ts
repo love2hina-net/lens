@@ -32,8 +32,14 @@ const showAboutInjectable = getInjectable({
         `Electron: ${process.versions.electron}`,
         `Chrome: ${process.versions.chrome}`,
         `Node: ${process.versions.node}`,
-        applicationCopyright,
       ];
+
+      if (typeof applicationCopyright === "string") {
+        appInfo.push(applicationCopyright);
+      }
+      else if (Array.isArray(applicationCopyright)) {
+        appInfo.push(...applicationCopyright);
+      }
 
       if (specificVersions.length > 0) {
         appInfo.push(

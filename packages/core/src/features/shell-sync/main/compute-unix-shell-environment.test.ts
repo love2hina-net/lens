@@ -60,6 +60,7 @@ describe("computeUnixShellEnvironment technical tests", () => {
         ] as any,
         killed: false,
         kill: jest.fn(),
+        [Symbol.dispose]: jest.fn(),
         send: jest.fn(),
         disconnect: jest.fn(),
         unref: jest.fn(),

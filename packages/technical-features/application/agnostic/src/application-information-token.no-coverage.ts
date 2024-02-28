@@ -8,7 +8,7 @@ export type ApplicationInformation = {
   name: string;
   version: string;
   productName: string;
-  copyright: string;
+  copyright: string | string[];
   description: string;
   k8sProxyVersion: string;
   bundledKubectlVersion: string;

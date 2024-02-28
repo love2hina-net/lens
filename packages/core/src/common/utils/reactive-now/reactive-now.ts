@@ -32,7 +32,7 @@ export function reactiveNow(interval?: number | "frame") {
 }
 
 function createIntervalTicker(interval: number) {
-  let subscriptionHandle: NodeJS.Timer;
+  let subscriptionHandle: NodeJS.Timeout;
 
   return fromResource(function (sink) {
     sink(Date.now());
