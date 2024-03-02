@@ -35,6 +35,6 @@
   },
   "devDependencies": {
     "@love2hina-net/k8slens.webpack": "^7.0.0",
-    "@types/uuid": "^9.0.1"
+    "@types/uuid": "^9.0.8"
   }
 }

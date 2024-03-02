@@ -19,15 +19,25 @@ const writeFileInjectable = getInjectable({
     return async (filePath, content, opts = {}) => {
       await ensureDir(getDirnameOfPath(filePath), {
         mode: 0o755,
-        ...opts,
       });
 
-      const { encoding = "utf-8", ...options } = opts;
+      let options: WriteFileOptions;
 
-      await writeFile(filePath, content, {
-        encoding: encoding as BufferEncoding,
-        ...options,
-      });
+      if (opts === null) {
+        options = {
+          encoding: "utf-8",
+        };
+      }
+      else if (typeof opts === "string") {
+        options = {
+          encoding: opts,
+        };
+      }
+      else {
+        options = opts;
+      }
+
+      await writeFile(filePath, content, options);
     };
   },
 });

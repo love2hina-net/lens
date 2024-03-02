@@ -5,11 +5,25 @@
 import type { DiContainer } from "@ogre-tools/injectable";
 import fsInjectable from "../common/fs/fs.injectable";
 import { createFsFromVolume, Volume } from "memfs";
+import url, { URL } from "node:url";
+import type { Path } from "jsonfile";
+import type { PathLike } from "fs";
 import type {
   ensureDirSync as ensureDirSyncImpl,
   readJsonSync as readJsonSyncImpl,
   writeJsonSync as writeJsonSyncImpl,
 } from "fs-extra";
+
+function convertPathLike(path: Path): PathLike {
+  if (path instanceof URL || path instanceof Buffer || typeof path === "string") {
+    // file is already PathLike
+    return path;
+  }
+  else {
+    // file is Url interface
+    return url.format(path);
+  }
+}
 
 export const getOverrideFsWithFakes = () => {
   const root = createFsFromVolume(Volume.fromJSON({}));
@@ -20,7 +34,7 @@ export const getOverrideFsWithFakes = () => {
         encoding: opts,
       }
       : opts;
-    const value = root.readFileSync(file, options as any) as string;
+    const value = root.readFileSync(convertPathLike(file), options as any) as string;
 
     return JSON.parse(value, options?.reviver);
   }) as typeof readJsonSyncImpl;
@@ -31,14 +45,14 @@ export const getOverrideFsWithFakes = () => {
       }
       : opts;
 
-    root.writeFileSync(file, JSON.stringify(object, options?.replacer, options?.spaces), options as any);
+    root.writeFileSync(convertPathLike(file), JSON.stringify(object, options?.replacer, options?.spaces), options as any);
   }) as typeof writeJsonSyncImpl;
   const ensureDirSync = ((path, opts) => {
     const mode = typeof opts === "number"
       ? opts
       : opts?.mode;
 
-    root.mkdirpSync(path, mode);
+    root.mkdirSync(path, { mode, recursive: true });
   }) as typeof ensureDirSyncImpl;
 
   return (di: DiContainer) => {

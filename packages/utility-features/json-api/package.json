@@ -45,7 +45,7 @@
     "@love2hina-net/k8slens.eslint-config": "^7.0.0",
     "@love2hina-net/k8slens.jest": "^7.0.0",
     "@love2hina-net/k8slens.typescript": "^7.0.0",
-    "@types/node": "^20.11.21",
+    "@types/node": "^20.11.24",
     "type-fest": "^2.14.0"
   }
 }
