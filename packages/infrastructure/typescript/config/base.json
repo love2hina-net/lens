@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "react",
-    "target": "ES2019",
-    "module": "ESNext",
+    "target": "ES2022",
+    "module": "CommonJS",
 
     "lib": [
       "ESNext",
@@ -11,7 +11,7 @@
       "DOM.Iterable"
     ],
 
-    "moduleResolution": "node16",
+    "moduleResolution": "node10",
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": true,
@@ -23,6 +23,7 @@
     "allowJs": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "ignoreDeprecations": "5.0",
     "importsNotUsedAsValues": "error",
     "traceResolution": false,
     "resolveJsonModule": true,
@@ -36,11 +37,7 @@
   },
 
   "ts-node": {
-    "transpileOnly": true,
-
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
+    "transpileOnly": true
   },
 
   "include": ["./styles.d.ts"]

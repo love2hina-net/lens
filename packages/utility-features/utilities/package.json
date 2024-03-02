@@ -28,6 +28,7 @@
     "@astronautlabs/jsonpath": "^1.1.0",
     "crypto-js": "^4.1.1",
     "lodash": "^4.17.21",
+    "minipass": "^7.0.4",
     "mobx": "^6.8.0",
     "moment": "^2.29.4",
     "p-limit": "^3.1.0",
@@ -48,6 +49,6 @@
     "@types/react-router": "^5.1.20",
     "@types/readable-stream": "^2.3.15",
     "@types/semver": "^7.3.13",
-    "@types/tar": "^6.1.4"
+    "@types/tar": "^6.1.11"
   }
 }

@@ -2,14 +2,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "react",
-    "target": "ES2019",
-    "module": "ES2022",
+    "target": "ES2022",
+    "module": "CommonJS",
     "lib": [
       "ESNext",
       "DOM",
       "DOM.Iterable"
     ],
-    "moduleResolution": "Node",
+    "moduleResolution": "node10",
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": true,
@@ -21,6 +21,8 @@
     "skipLibCheck": true,
     "allowJs": false,
     "esModuleInterop": true,
+    // TODO: verbatimModuleSyntax を設定する
+    "ignoreDeprecations": "5.0",
     "importsNotUsedAsValues": "error",
     "traceResolution": false,
     "resolveJsonModule": true,
@@ -28,9 +30,6 @@
   },
   "ts-node": {
     "transpileOnly": true,
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
   },
   "exclude": [
     "node_modules",

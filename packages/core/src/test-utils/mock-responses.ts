@@ -5,6 +5,12 @@
 import type { Response, Headers as NodeFetchHeaders } from "@love2hina-net/k8slens.node-fetch";
 import { PassThrough } from "stream";
 
+function createHeaders(): NodeFetchHeaders {
+  const headers = new Headers() as unknown;
+
+  return headers as NodeFetchHeaders;
+}
+
 export const createMockResponseFromString = (url: string, data: string, statusCode = 200) => {
   const res: jest.Mocked<Response> = {
     buffer: jest.fn(async () => { throw new Error("buffer() is not supported"); }),
@@ -13,7 +19,7 @@ export const createMockResponseFromString = (url: string, data: string, statusCo
     blob: jest.fn(async () => { throw new Error("blob() is not supported"); }),
     body: new PassThrough(),
     bodyUsed: false,
-    headers: new Headers() as NodeFetchHeaders,
+    headers: createHeaders(),
     json: jest.fn(async () => JSON.parse(await res.text())),
     ok: 200 <= statusCode && statusCode < 300,
     redirected: 300 <= statusCode && statusCode < 400,
@@ -37,7 +43,7 @@ export const createMockResponseFromStream = (url: string, stream: NodeJS.Readabl
     blob: jest.fn(async () => { throw new Error("blob() is not supported"); }),
     body: stream,
     bodyUsed: false,
-    headers: new Headers() as NodeFetchHeaders,
+    headers: createHeaders(),
     json: jest.fn(async () => JSON.parse(await res.text())),
     ok: 200 <= statusCode && statusCode < 300,
     redirected: 300 <= statusCode && statusCode < 400,

@@ -13,6 +13,6 @@
       "legacyDecorator": true,
       "decoratorMetadata": true
     },
-    "target": "es2019"
+    "target": "es2022"
   }
 }

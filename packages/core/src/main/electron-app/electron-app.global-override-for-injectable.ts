@@ -140,6 +140,10 @@ export default getGlobalOverride(electronAppInjectable, () => {
     resignCurrentActivity(): void {
       throw new Error("Method not implemented.");
     }
+    resolveProxy(url: string): Promise<string> {
+      void url;
+      throw new Error("Method not implemented.");
+    }
     setAboutPanelOptions(options: Electron.AboutPanelOptionsOptions): void {
       void options;
       throw new Error("Method not implemented.");
@@ -176,6 +180,10 @@ export default getGlobalOverride(electronAppInjectable, () => {
     }
     setName(name: string): void {
       void name;
+      throw new Error("Method not implemented.");
+    }
+    setProxy(config: Electron.ProxyConfig): void {
+      void config;
       throw new Error("Method not implemented.");
     }
     setSecureKeyboardEntryEnabled(enabled: boolean): void {
