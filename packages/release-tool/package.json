@@ -19,7 +19,7 @@
     "@types/semver": "^7.3.13",
     "install": "^0.13.0",
     "npm": "^10.4.0",
-    "rimraf": "^4.4.1"
+    "rimraf": "^5.0.5"
   },
   "dependencies": {
     "chalk": "^5.2.0",
