@@ -35,8 +35,8 @@
     "@love2hina-net/k8slens.feature-core": "^7.0.0",
     "@love2hina-net/k8slens.kube-api": "^7.0.0",
     "@love2hina-net/k8slens.logger": "^7.0.0",
-    "@ogre-tools/injectable": "^17.2.0",
-    "@ogre-tools/injectable-extension-for-auto-registration": "^17.2.0"
+    "@ogre-tools/injectable": "^17.11.1",
+    "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1"
   },
   "devDependencies": {
     "@love2hina-net/k8slens.eslint-config": "^7.0.0",

@@ -33,8 +33,8 @@
   },
   "peerDependencies": {
     "@love2hina-net/k8slens.feature-core": "^7.0.0",
-    "@ogre-tools/injectable": "^17.1.0",
-    "@ogre-tools/injectable-extension-for-auto-registration": "^17.1.0",
+    "@ogre-tools/injectable": "^17.11.1",
+    "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

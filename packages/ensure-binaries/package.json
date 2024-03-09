@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist/",
-    "build": "swc ./src/index.ts -d ./dist/",
+    "build": "swc ./src/index.ts -o ./dist/index.js",
     "ensure": "node ./dist/index.js"
   },
   "type": "module",

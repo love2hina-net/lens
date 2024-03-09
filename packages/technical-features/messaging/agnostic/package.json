@@ -34,11 +34,11 @@
     "@love2hina-net/k8slens.application": "^7.0.0",
     "@love2hina-net/k8slens.feature-core": "^7.0.0",
     "@love2hina-net/k8slens.startable-stoppable": "^7.0.0",
-    "@ogre-tools/injectable": "^17.2.0",
-    "@ogre-tools/injectable-extension-for-auto-registration": "^17.2.0",
-    "@ogre-tools/injectable-extension-for-mobx": "^17.2.0",
+    "@ogre-tools/injectable": "^17.11.1",
+    "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
+    "@ogre-tools/injectable-extension-for-mobx": "^17.11.1",
     "lodash": "^4.17.21",
-    "mobx": "^6.7.0"
+    "mobx": "^6.12.0"
   },
   "devDependencies": {
     "@love2hina-net/k8slens.eslint-config": "^7.0.0",

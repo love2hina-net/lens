@@ -36,9 +36,9 @@
     "@love2hina-net/k8slens.messaging": "^7.0.0",
     "@love2hina-net/k8slens.run-many": "^7.0.0",
     "@love2hina-net/k8slens.startable-stoppable": "^7.0.0",
-    "@ogre-tools/injectable": "^17.2.0",
-    "@ogre-tools/injectable-extension-for-auto-registration": "^17.2.0",
-    "electron": "^29.0.1",
+    "@ogre-tools/injectable": "^17.11.1",
+    "@ogre-tools/injectable-extension-for-auto-registration": "^17.11.1",
+    "electron": "^29.1.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

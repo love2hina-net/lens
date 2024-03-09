@@ -38,8 +38,8 @@
     "@love2hina-net/k8slens.event-emitter": "^7.0.0",
     "@love2hina-net/k8slens.logger": "^7.0.0",
     "@love2hina-net/k8slens.utilities": "^7.0.0",
-    "lodash": "^4.17.15",
-    "rfc6902": "^5.0.1"
+    "lodash": "^4.17.21",
+    "rfc6902": "^5.1.1"
   },
   "devDependencies": {
     "@love2hina-net/k8slens.eslint-config": "^7.0.0",

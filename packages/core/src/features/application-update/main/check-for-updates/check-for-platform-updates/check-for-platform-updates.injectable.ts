@@ -29,7 +29,7 @@ const checkForPlatformUpdatesInjectable = getInjectable({
       electronUpdater.autoDownload = false;
       electronUpdater.allowDowngrade = allowDowngrade;
 
-      let result: UpdateCheckResult;
+      let result: UpdateCheckResult | null = null;
 
       try {
         result = await electronUpdater.checkForUpdates();
@@ -41,9 +41,7 @@ const checkForPlatformUpdatesInjectable = getInjectable({
         };
       }
 
-      const { updateInfo, cancellationToken } = result;
-
-      if (!cancellationToken) {
+      if ((result == null) || (!result.cancellationToken)) {
         return {
           updateWasDiscovered: false,
         };
@@ -51,7 +49,7 @@ const checkForPlatformUpdatesInjectable = getInjectable({
 
       return {
         updateWasDiscovered: true,
-        version: updateInfo.version,
+        version: result.updateInfo.version,
       };
     };
   },
