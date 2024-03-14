@@ -96,7 +96,7 @@
       "<rootDir>/src/jest-after-env.setup.ts"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!jsonpath-plus)"
+      "../../node_modules/(?!jsonpath-plus)"
     ],
     "runtime": "@side/jest-runtime"
   },

@@ -32,7 +32,7 @@
     "test:integration": "jest -xyz --runInBand --modulePaths=[\"<rootDir>/integration/\"];",
     "build:tray-icons": "npm run --workspace @love2hina-net/k8slens.generate-tray-icons generate -- --output static/build/tray --input @love2hina-net/k8slens.icon/icons/logo-lens.svg --notice-icon @love2hina-net/k8slens.icon/icons/notice.svg --spinner-icon @love2hina-net/k8slens.icon/icons/arrow-spinner.svg",
     "download:binaries": "npm run --workspace @love2hina-net/k8slens.ensure-binaries ensure -- --package package.json --base-dir binaries/client",
-    "postinstall": "rem electron-rebuild"
+    "postinstall": "echo 'electron-rebuild'"
   },
   "config": {
     "k8sProxyVersion": "0.3.0",

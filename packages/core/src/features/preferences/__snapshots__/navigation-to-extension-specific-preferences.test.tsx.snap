@@ -212,12 +212,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         aria-live="polite"
                         aria-relevant="additions text"
                         class="css-1f43avz-a11yText-A11yText"
+                        role="log"
                       />
                       <div
                         class="Select__control css-13cymwt-control"
                       >
                         <div
-                          class="Select__value-container css-1fdsijx-ValueContainer"
+                          class="Select__value-container css-16674sh-Component"
                         >
                           <div
                             class="Select__placeholder css-1jqq78o-placeholder"
@@ -226,10 +227,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                             Select...
                           </div>
                           <div
-                            class="Select__input-container css-qbdosj-Input"
+                            class="Select__input-container css-d9r47t-Component"
                             data-value=""
                           >
                             <input
+                              aria-activedescendant=""
                               aria-autocomplete="list"
                               aria-describedby="react-select-theme-input-placeholder"
                               aria-expanded="false"
@@ -249,7 +251,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           </div>
                         </div>
                         <div
-                          class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                          class="Select__indicators css-ny0e4k-Component"
                         >
                           <span
                             class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -303,12 +305,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         aria-live="polite"
                         aria-relevant="additions text"
                         class="css-1f43avz-a11yText-A11yText"
+                        role="log"
                       />
                       <div
                         class="Select__control css-13cymwt-control"
                       >
                         <div
-                          class="Select__value-container Select__value-container--has-value css-1fdsijx-ValueContainer"
+                          class="Select__value-container Select__value-container--has-value css-16674sh-Component"
                         >
                           <div
                             class="Select__single-value css-1dimb5e-singleValue"
@@ -316,10 +319,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                             Default Url
                           </div>
                           <div
-                            class="Select__input-container css-qbdosj-Input"
+                            class="Select__input-container css-d9r47t-Component"
                             data-value=""
                           >
                             <input
+                              aria-activedescendant=""
                               aria-autocomplete="list"
                               aria-expanded="false"
                               aria-haspopup="true"
@@ -338,7 +342,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           </div>
                         </div>
                         <div
-                          class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                          class="Select__indicators css-ny0e4k-Component"
                         >
                           <span
                             class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -448,12 +452,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         aria-live="polite"
                         aria-relevant="additions text"
                         class="css-1f43avz-a11yText-A11yText"
+                        role="log"
                       />
                       <div
                         class="Select__control css-13cymwt-control"
                       >
                         <div
-                          class="Select__value-container Select__value-container--has-value css-1fdsijx-ValueContainer"
+                          class="Select__value-container Select__value-container--has-value css-16674sh-Component"
                         >
                           <div
                             class="Select__single-value css-1dimb5e-singleValue"
@@ -461,10 +466,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                             Etc/GMT
                           </div>
                           <div
-                            class="Select__input-container css-qbdosj-Input"
+                            class="Select__input-container css-d9r47t-Component"
                             data-value=""
                           >
                             <input
+                              aria-activedescendant=""
                               aria-autocomplete="list"
                               aria-expanded="false"
                               aria-haspopup="true"
@@ -483,7 +489,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           </div>
                         </div>
                         <div
-                          class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                          class="Select__indicators css-ny0e4k-Component"
                         >
                           <span
                             class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -2537,12 +2543,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                       aria-live="polite"
                       aria-relevant="additions text"
                       class="css-1f43avz-a11yText-A11yText"
+                      role="log"
                     />
                     <div
                       class="Select__control css-13cymwt-control"
                     >
                       <div
-                        class="Select__value-container css-1fdsijx-ValueContainer"
+                        class="Select__value-container css-16674sh-Component"
                       >
                         <div
                           class="Select__placeholder css-1jqq78o-placeholder"
@@ -2551,10 +2558,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           Select...
                         </div>
                         <div
-                          class="Select__input-container css-qbdosj-Input"
+                          class="Select__input-container css-d9r47t-Component"
                           data-value=""
                         >
                           <input
+                            aria-activedescendant=""
                             aria-autocomplete="list"
                             aria-describedby="react-select-theme-input-placeholder"
                             aria-expanded="false"
@@ -2574,7 +2582,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         </div>
                       </div>
                       <div
-                        class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                        class="Select__indicators css-ny0e4k-Component"
                       >
                         <span
                           class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -2628,12 +2636,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                       aria-live="polite"
                       aria-relevant="additions text"
                       class="css-1f43avz-a11yText-A11yText"
+                      role="log"
                     />
                     <div
                       class="Select__control css-13cymwt-control"
                     >
                       <div
-                        class="Select__value-container Select__value-container--has-value css-1fdsijx-ValueContainer"
+                        class="Select__value-container Select__value-container--has-value css-16674sh-Component"
                       >
                         <div
                           class="Select__single-value css-1dimb5e-singleValue"
@@ -2641,10 +2650,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           Default Url
                         </div>
                         <div
-                          class="Select__input-container css-qbdosj-Input"
+                          class="Select__input-container css-d9r47t-Component"
                           data-value=""
                         >
                           <input
+                            aria-activedescendant=""
                             aria-autocomplete="list"
                             aria-expanded="false"
                             aria-haspopup="true"
@@ -2663,7 +2673,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         </div>
                       </div>
                       <div
-                        class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                        class="Select__indicators css-ny0e4k-Component"
                       >
                         <span
                           class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -2773,12 +2783,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                       aria-live="polite"
                       aria-relevant="additions text"
                       class="css-1f43avz-a11yText-A11yText"
+                      role="log"
                     />
                     <div
                       class="Select__control css-13cymwt-control"
                     >
                       <div
-                        class="Select__value-container Select__value-container--has-value css-1fdsijx-ValueContainer"
+                        class="Select__value-container Select__value-container--has-value css-16674sh-Component"
                       >
                         <div
                           class="Select__single-value css-1dimb5e-singleValue"
@@ -2786,10 +2797,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           Etc/GMT
                         </div>
                         <div
-                          class="Select__input-container css-qbdosj-Input"
+                          class="Select__input-container css-d9r47t-Component"
                           data-value=""
                         >
                           <input
+                            aria-activedescendant=""
                             aria-autocomplete="list"
                             aria-expanded="false"
                             aria-haspopup="true"
@@ -2808,7 +2820,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         </div>
                       </div>
                       <div
-                        class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                        class="Select__indicators css-ny0e4k-Component"
                       >
                         <span
                           class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -3253,12 +3265,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                       aria-live="polite"
                       aria-relevant="additions text"
                       class="css-1f43avz-a11yText-A11yText"
+                      role="log"
                     />
                     <div
                       class="Select__control css-13cymwt-control"
                     >
                       <div
-                        class="Select__value-container css-1fdsijx-ValueContainer"
+                        class="Select__value-container css-16674sh-Component"
                       >
                         <div
                           class="Select__placeholder css-1jqq78o-placeholder"
@@ -3267,10 +3280,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           Select...
                         </div>
                         <div
-                          class="Select__input-container css-qbdosj-Input"
+                          class="Select__input-container css-d9r47t-Component"
                           data-value=""
                         >
                           <input
+                            aria-activedescendant=""
                             aria-autocomplete="list"
                             aria-describedby="react-select-theme-input-placeholder"
                             aria-expanded="false"
@@ -3290,7 +3304,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         </div>
                       </div>
                       <div
-                        class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                        class="Select__indicators css-ny0e4k-Component"
                       >
                         <span
                           class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -3344,12 +3358,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                       aria-live="polite"
                       aria-relevant="additions text"
                       class="css-1f43avz-a11yText-A11yText"
+                      role="log"
                     />
                     <div
                       class="Select__control css-13cymwt-control"
                     >
                       <div
-                        class="Select__value-container Select__value-container--has-value css-1fdsijx-ValueContainer"
+                        class="Select__value-container Select__value-container--has-value css-16674sh-Component"
                       >
                         <div
                           class="Select__single-value css-1dimb5e-singleValue"
@@ -3357,10 +3372,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           Default Url
                         </div>
                         <div
-                          class="Select__input-container css-qbdosj-Input"
+                          class="Select__input-container css-d9r47t-Component"
                           data-value=""
                         >
                           <input
+                            aria-activedescendant=""
                             aria-autocomplete="list"
                             aria-expanded="false"
                             aria-haspopup="true"
@@ -3379,7 +3395,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         </div>
                       </div>
                       <div
-                        class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                        class="Select__indicators css-ny0e4k-Component"
                       >
                         <span
                           class="Select__indicator-separator css-1u9des2-indicatorSeparator"
@@ -3489,12 +3505,13 @@ exports[`preferences - navigation to extension specific preferences given in pre
                       aria-live="polite"
                       aria-relevant="additions text"
                       class="css-1f43avz-a11yText-A11yText"
+                      role="log"
                     />
                     <div
                       class="Select__control css-13cymwt-control"
                     >
                       <div
-                        class="Select__value-container Select__value-container--has-value css-1fdsijx-ValueContainer"
+                        class="Select__value-container Select__value-container--has-value css-16674sh-Component"
                       >
                         <div
                           class="Select__single-value css-1dimb5e-singleValue"
@@ -3502,10 +3519,11 @@ exports[`preferences - navigation to extension specific preferences given in pre
                           Etc/GMT
                         </div>
                         <div
-                          class="Select__input-container css-qbdosj-Input"
+                          class="Select__input-container css-d9r47t-Component"
                           data-value=""
                         >
                           <input
+                            aria-activedescendant=""
                             aria-autocomplete="list"
                             aria-expanded="false"
                             aria-haspopup="true"
@@ -3524,7 +3542,7 @@ exports[`preferences - navigation to extension specific preferences given in pre
                         </div>
                       </div>
                       <div
-                        class="Select__indicators css-1hb7zxy-IndicatorsContainer"
+                        class="Select__indicators css-ny0e4k-Component"
                       >
                         <span
                           class="Select__indicator-separator css-1u9des2-indicatorSeparator"

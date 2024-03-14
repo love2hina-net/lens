@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@love2hina-net/k8slens.eslint-config": "^7.0.0",
-    "@love2hina-net/k8slens.webpack": "^7.0.0"
+    "@love2hina-net/k8slens.webpack": "^7.0.0",
+    "@types/uuid": "^9.0.8"
   }
 }
