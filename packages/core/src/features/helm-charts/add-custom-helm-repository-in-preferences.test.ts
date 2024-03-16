@@ -224,6 +224,7 @@ describe("add custom helm repository in preferences", () => {
                   [
                     "some-helm-binary-path",
                     ["repo", "add", "some-custom-repository", "http://some.url"],
+                    {},
                   ],
                   {
                     callWasSuccessful: true,

@@ -132,7 +132,7 @@ describe("listing active helm repositories in preferences", () => {
         execFileMock.mockClear();
 
         await execFileMock.resolveSpecific(
-          ["some-helm-binary-path", ["env"]],
+          ["some-helm-binary-path", ["env"], {}],
           {
             callWasSuccessful: true,
             response: "HELM_REPOSITORY_CACHE=some-helm-repository-cache-path",
@@ -174,7 +174,7 @@ describe("listing active helm repositories in preferences", () => {
         execFileMock.mockClear();
 
         await execFileMock.resolveSpecific(
-          ["some-helm-binary-path", ["env"]],
+          ["some-helm-binary-path", ["env"], {}],
           {
             callWasSuccessful: true,
             response: "HELM_REPOSITORY_CONFIG=some-helm-repository-config-file.yaml",
@@ -216,7 +216,7 @@ describe("listing active helm repositories in preferences", () => {
         execFileMock.mockClear();
 
         await execFileMock.resolveSpecific(
-          ["some-helm-binary-path", ["env"]],
+          ["some-helm-binary-path", ["env"], {}],
           {
             callWasSuccessful: true,
             response: [
@@ -358,6 +358,7 @@ describe("listing active helm repositories in preferences", () => {
                   "bitnami",
                   "https://charts.bitnami.com/bitnami",
                 ],
+                {},
               ],
               {
                 callWasSuccessful: true,
@@ -425,7 +426,7 @@ describe("listing active helm repositories in preferences", () => {
           execFileMock.mockClear();
 
           await execFileMock.resolveSpecific(
-            ["some-helm-binary-path", ["repo", "update"]],
+            ["some-helm-binary-path", ["repo", "update"], {}],
             {
               callWasSuccessful: true,
               response: "",

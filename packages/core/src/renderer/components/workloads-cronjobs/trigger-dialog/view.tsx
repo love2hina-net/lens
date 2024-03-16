@@ -58,6 +58,12 @@ class NonInjectedCronJobTriggerDialog extends Component<CronJobTriggerDialogProp
       return;
     }
 
+    const uid = cronJob.metadata.uid;
+    if (!uid) {
+      this.props.showErrorNotification(`CronJob ${cronJob.getName()} has no UID`);
+      return;
+    }
+
     try {
       await this.props.jobApi.create({
         name: this.jobName,
@@ -72,7 +78,7 @@ class NonInjectedCronJobTriggerDialog extends Component<CronJobTriggerDialogProp
             controller: true,
             kind: cronJob.kind,
             name: cronJob.metadata.name,
-            uid: cronJob.metadata.uid,
+            uid,
           }],
         },
       });

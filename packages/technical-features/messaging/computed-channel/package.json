@@ -45,6 +45,6 @@
     "@love2hina-net/k8slens.eslint-config": "^7.0.0",
     "@love2hina-net/k8slens.messaging-fake-bridge": "^7.0.0",
     "@love2hina-net/k8slens.webpack": "^7.0.0",
-    "type-fest": "^2.14.0"
+    "type-fest": "^4.12.0"
   }
 }

@@ -177,6 +177,7 @@ describe("add helm repository from list in preferences", () => {
                 [
                   "some-helm-binary-path",
                   ["repo", "add", "Some to be added repository", "some-other-url"],
+                  {},
                 ],
                 {
                   callWasSuccessful: true,
@@ -269,6 +270,7 @@ describe("add helm repository from list in preferences", () => {
                         [
                           "some-helm-binary-path",
                           ["repo", "remove", "Some already active repository"],
+                          {},
                         ],
                         {
                           callWasSuccessful: true,
