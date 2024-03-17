@@ -91,7 +91,8 @@ export interface CatalogCategorySpec {
  */
 export type AddMenuFilter = (menu: CatalogEntityAddMenu) => any;
 
-export interface CatalogCategoryEvents {
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions -- TypedEmitter is not accepted on interface
+export type CatalogCategoryEvents = {
   /**
    * This event will be emitted when the category is loaded in the catalog
    * view.
@@ -109,7 +110,7 @@ export interface CatalogCategoryEvents {
    * by this category is opened.
    */
   contextMenuOpen: (entity: CatalogEntity, context: CatalogEntityContextMenuContext) => void;
-}
+};
 
 export interface CatalogCategoryMetadata {
   /**

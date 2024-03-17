@@ -13,7 +13,7 @@ export type RunManySync = <Param>(injectionToken: InjectionToken<RunnableSync<Pa
 
 class SyncBarrier {
   private readonly finishedIds = new Set<string>();
-  private readonly events: TypedEventEmitter<Record<string, () => void>> = new EventEmitter();
+  private readonly events: TypedEventEmitter<Record<string, () => void>> = new EventEmitter() as TypedEventEmitter<Record<string, () => void>>;
 
   setFinished(id: string): void {
     this.finishedIds.add(id);

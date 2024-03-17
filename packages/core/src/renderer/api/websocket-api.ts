@@ -6,7 +6,7 @@
 import { observable, makeObservable } from "mobx";
 import EventEmitter from "events";
 import type TypedEventEmitter from "typed-emitter";
-import type { Arguments } from "typed-emitter";
+import type { EventMap } from "typed-emitter";
 import type { Defaulted } from "@love2hina-net/k8slens.utilities";
 import type { DefaultWebsocketApiParams } from "./default-websocket-api-params.injectable";
 
@@ -57,17 +57,18 @@ export enum WebSocketApiState {
   CLOSED = "closed",
 }
 
-export interface WebSocketEvents {
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions -- TypedEmitter is not accepted on interface
+export type WebSocketEvents = {
   open: () => void;
   data: (message: string) => void;
   close: () => void;
-}
+};
 
 export interface WebSocketApiDependencies {
   readonly defaultParams: DefaultWebsocketApiParams;
 }
 
-export class WebSocketApi<Events extends WebSocketEvents> extends (EventEmitter as { new<T>(): TypedEventEmitter<T> })<Events> {
+export class WebSocketApi<Events extends WebSocketEvents> extends (EventEmitter as { new<T extends EventMap>(): TypedEventEmitter<T> })<Events> {
   protected socket: WebSocket | null = null;
   protected pendingCommands: string[] = [];
   protected reconnectTimer?: number;
@@ -157,14 +158,14 @@ export class WebSocketApi<Events extends WebSocketEvents> extends (EventEmitter 
   }
 
   protected _onOpen(evt: Event) {
-    this.emit("open", ...[] as Arguments<Events["open"]>);
+    this.emit("open", ...[] as Parameters<Events["open"]>);
     if (this.params.flushOnOpen) this.flush();
     this.readyState = WebSocketApiState.OPEN;
     this.writeLog("%cOPEN", "color:green;font-weight:bold;", evt);
   }
 
   protected _onMessage({ data }: MessageEvent): void {
-    this.emit("data", ...[data] as Arguments<Events["data"]>);
+    this.emit("data", ...[data] as Parameters<Events["data"]>);
     this.writeLog("%cMESSAGE", "color:black;font-weight:bold;", data);
   }
 
@@ -188,7 +189,7 @@ export class WebSocketApi<Events extends WebSocketEvents> extends (EventEmitter 
       }
     } else {
       this.readyState = WebSocketApiState.CLOSED;
-      this.emit("close", ...[] as Arguments<Events["close"]>);
+      this.emit("close", ...[] as Parameters<Events["close"]>);
     }
     this.writeLog("%cCLOSE", `color:${error ? "red" : "black"};font-weight:bold;`, evt);
   }

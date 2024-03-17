@@ -73,10 +73,11 @@ interface ExtensionDiscoveryChannelMessage {
  */
 const isDirectoryLike = (lstat: Stats) => lstat.isDirectory() || lstat.isSymbolicLink();
 
-interface ExtensionDiscoveryEvents {
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions -- TypedEmitter is not accepted on interface
+type ExtensionDiscoveryEvents = {
   add: (ext: InstalledExtension) => void;
   remove: (extId: LensExtensionId) => void;
-}
+};
 
 /**
  * Discovers installed bundled and local extensions from the filesystem.
@@ -101,7 +102,7 @@ export class ExtensionDiscovery {
     return when(() => this.isLoaded);
   }
 
-  public readonly events: TypedEventEmitter<ExtensionDiscoveryEvents> = new EventEmitter();
+  public readonly events: TypedEventEmitter<ExtensionDiscoveryEvents> = new EventEmitter() as TypedEventEmitter<ExtensionDiscoveryEvents>;
 
   constructor(protected readonly dependencies: Dependencies) {
     makeObservable(this);

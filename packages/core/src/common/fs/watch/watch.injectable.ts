@@ -8,17 +8,18 @@ import type { Stats } from "fs";
 import type TypedEventEmitter from "typed-emitter";
 import type { SingleOrMany } from "@love2hina-net/k8slens.utilities";
 
-export interface AlwaysStatWatcherEvents {
+/* eslint-disable @typescript-eslint/consistent-type-definitions -- TypedEmitter is not accepted on interface */
+export type AlwaysStatWatcherEvents = {
   add: (path: string, stats: Stats) => void;
   addDir: (path: string, stats: Stats) => void;
   change: (path: string, stats: Stats) => void;
-}
+};
 
-export interface MaybeStatWatcherEvents {
+export type MaybeStatWatcherEvents = {
   add: (path: string, stats?: Stats) => void;
   addDir: (path: string, stats?: Stats) => void;
   change: (path: string, stats?: Stats) => void;
-}
+};
 
 export type WatcherEvents<AlwaysStat extends boolean> = BaseWatcherEvents
   & (
@@ -27,12 +28,13 @@ export type WatcherEvents<AlwaysStat extends boolean> = BaseWatcherEvents
       : MaybeStatWatcherEvents
   );
 
-export interface BaseWatcherEvents {
+export type BaseWatcherEvents = {
   error: (error: Error) => void;
   ready: () => void;
   unlink: (path: string) => void;
   unlinkDir: (path: string) => void;
-}
+};
+/* eslint-enable */
 
 export interface Watcher<AlwaysStat extends boolean> extends TypedEventEmitter<WatcherEvents<AlwaysStat>> {
   close: () => Promise<void>;

@@ -431,7 +431,7 @@ describe("kubeconfig-sync.source tests", () => {
 });
 
 const getFakeWatchInstance = (): Watcher<true> => {
-  return Object.assign(new EventEmitter(), {
+  return Object.assign(new EventEmitter() as Watcher<true>, {
     close: jest.fn().mockImplementation(async () => {}),
   });
 };

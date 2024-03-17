@@ -7,9 +7,10 @@ import EventEmitter from "events";
 import type TypedEventEmitter from "typed-emitter";
 import type { KubeApi } from "@love2hina-net/k8slens.kube-api";
 
-export interface LegacyAutoRegistration {
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions -- TypedEmitter is not accepted on interface
+export type LegacyAutoRegistration = {
   kubeApi: (api: KubeApi<any, any>) => void;
-}
+};
 
 /**
  * This is used to remove dependency cycles from auto registering of instances
@@ -19,7 +20,7 @@ export interface LegacyAutoRegistration {
  */
 const autoRegistrationEmitterInjectable = getInjectable({
   id: "auto-registration-emitter",
-  instantiate: (): TypedEventEmitter<LegacyAutoRegistration> => new EventEmitter(),
+  instantiate: (): TypedEventEmitter<LegacyAutoRegistration> => new EventEmitter() as TypedEventEmitter<LegacyAutoRegistration>,
 });
 
 export default autoRegistrationEmitterInjectable;
